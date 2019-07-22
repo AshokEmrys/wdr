@@ -1,5 +1,5 @@
 ---
 title: Home
-layout: home
+layout: general_page
 ---
 
