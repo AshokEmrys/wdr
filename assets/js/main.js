@@ -95,7 +95,7 @@ function scrollFunction() {
         }
     } else {
         if (currentHeight <= finalHeight) {
-            $(".jkl-menu").css("background-color", "#00000052")
+            $(".jkl-menu").css("background-color", "#00000052");
             return
         }
             let expHeight = this.headerLogoHeight - heightDiff * scrollTop / movePx
