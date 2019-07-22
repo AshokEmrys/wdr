@@ -1,7 +1,13 @@
+
 // Slider
 $(document).ready(function() {
 
     mainSlider();
+    scrollFunction();
+    AOS.init({
+        offset: 200,
+        duration: 1200,
+    });
 })
 
 
@@ -71,7 +77,7 @@ function scrollFunction() {
     if (!this.headerLogoHeight) {
         this.headerLogoHeight = currentHeight
     }
-    let heightDiff = this.headerLogoHeight - 70
+    let heightDiff = this.headerLogoHeight - finalHeight
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
     if (scrollTop == 0) {
         $("#menu-logo").height(this.headerLogoHeight)
@@ -95,7 +101,7 @@ function scrollFunction() {
         }
     } else {
         if (currentHeight <= finalHeight) {
-            $(".jkl-menu").css("background-color", "#00000052");
+            $(".jkl-menu").css("background-color", "#000000BC");
             return
         }
             let expHeight = this.headerLogoHeight - heightDiff * scrollTop / movePx
@@ -105,7 +111,7 @@ function scrollFunction() {
             } else {
                 $("#menu-logo").height(finalHeight)
                 $("#menu-logo").width(finalHeight)
-                $(".jkl-menu").css("background-color", "#00000052")
+                $(".jkl-menu").css("background-color", "#000000BC")
             }
 
 
