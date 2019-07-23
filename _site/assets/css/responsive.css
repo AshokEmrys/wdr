@@ -35,6 +35,10 @@
     .jkl-slider-content p {
         font-size: 14px;
     }
+
+    .yoga-img-thumb img, .jkl-home-about-img img {
+        width: 100%
+    }
 }
 
 /* LG Device :992px. */
