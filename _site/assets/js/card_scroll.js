@@ -329,7 +329,7 @@ jQuery(document).ready(function ($) {
                     break;
                 case 'rotate':
                     opacity = (1 - (sectionOffset / windowHeight)).toFixed(5);
-                    rotateX = sectionOffset * 90 / windowHeight + 'deg';
+                    rotateX = sectionOffset * 140 / windowHeight + 'deg';
                     translateY = 0;
                     break;
                 case 'gallery':

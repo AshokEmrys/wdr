@@ -8,6 +8,7 @@ $(document).ready(function() {
         offset: 200,
         duration: 1200,
     });
+
 })
 
 
@@ -64,7 +65,6 @@ function mainSlider() {
 // Logo Scroll Effect
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
-    console.log("s")
     if ($(".jkl-menu").css("position") != "fixed") {
         return
     }

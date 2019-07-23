@@ -1,13 +1,13 @@
 
 // Slider
 $(document).ready(function() {
-
-    mainSlider();
-    scrollFunction();
     AOS.init({
         offset: 200,
         duration: 1200,
     });
+    mainSlider();
+    scrollFunction();
+
 })
 
 
@@ -64,7 +64,6 @@ function mainSlider() {
 // Logo Scroll Effect
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
-    console.log("s")
     if ($(".jkl-menu").css("position") != "fixed") {
         return
     }
