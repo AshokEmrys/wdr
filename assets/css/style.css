@@ -654,8 +654,9 @@ ul {
 .portfolio-thumb img {
     transition: .3s;
 }
-.portfolio-thumb img {
 
+img {
+    transition: .3s;
 }
 .portfolio-wrapper:hover .portfolio-thumb img {
     transform: rotate(3deg) scale(1.1);
@@ -901,3 +902,18 @@ ul {
     background-size: cover;
 }
 
+.jkl-header-bg h1 {
+    position: relative
+}
+
+.jkl-header-bg h1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 80px;
+    height: 2px;
+    background: #ff5e14;
+    bottom: -15px;
+    right: 0;
+    margin: auto;
+}
