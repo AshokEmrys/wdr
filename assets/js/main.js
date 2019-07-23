@@ -23,6 +23,9 @@ $(document).ready(function() {
         anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
     });
+
+    setTimeout(function() { AOS.refresh(); }, 1000);
+
     mainSlider();
     scrollFunction();
 
