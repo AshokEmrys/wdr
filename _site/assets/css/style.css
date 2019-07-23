@@ -661,7 +661,7 @@ ul {
     transform: rotate(3deg) scale(1.1);
 }
 
-.yoga-img-thumb:hover {
+.yoga-img-thumb img:hover {
     transition: .3s ease;
     transform: translateX(10px) scale(1.1);
 }
