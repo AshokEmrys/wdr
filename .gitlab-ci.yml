@@ -1,6 +1,7 @@
 image: ruby:2.6.3
 
 before_script:
+  - gem install bundler:2.0.2
   - bundle install
 
 pages:
