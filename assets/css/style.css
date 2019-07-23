@@ -366,13 +366,13 @@ label {
 }
 
 .slick-slide:nth-child(1n)  .jkl-slider-container {
-    background-image:url("../..//images/home/slider/slider1.jpg");
+    background-image:url("../../images/home/slider/slider1.jpg");
 }
 .slick-slide:nth-child(2n) .jkl-slider-container {
-    background-image: url("../..//images/home/slider/slider2.jpg");
+    background-image: url("../../images/home/slider/slider2.jpg");
 }
 .slick-slide:nth-child(3n) .jkl-slider-container {
-    background-image: url("../..//images/home/slider/slider3.jpg");
+    background-image: url("../../images/home/slider/slider3.jpg");
 }
 
 /* slick dots */
