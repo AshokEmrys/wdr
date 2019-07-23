@@ -800,7 +800,7 @@ img {
     height: 130%;
     background: #000;
     opacity: .5;
-    z-index:1
+    z-index:0
 }
 .jkl-home-updates .container-fluid {
     z-index: 2;
