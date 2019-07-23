@@ -27,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="372" column="1" lean-forward="true" selection-start-line="372" selection-start-column="1" selection-end-line="372" selection-end-column="1" />
+            <state relative-caret-position="223">
+              <caret line="831" column="23" lean-forward="true" selection-start-line="831" selection-start-column="23" selection-end-line="831" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -253,7 +253,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>jkl-home-parallex</find>
       <find>service-area</find>
       <find>feature</find>
       <find>about-info-text</find>
@@ -283,6 +282,7 @@
       <find>aos-init</find>
       <find>assets</find>
       <find>features-wrap</find>
+      <find>/images</find>
     </findStrings>
     <replaceStrings>
       <replace>.jkl-footer-</replace>
@@ -452,7 +452,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47255000" />
+    <option name="totallyTimeSpent" value="47369000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="3008" height="1669" extended-state="6" />
@@ -1030,8 +1030,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="372" column="1" lean-forward="true" selection-start-line="372" selection-start-column="1" selection-end-line="372" selection-end-column="1" />
+        <state relative-caret-position="223">
+          <caret line="831" column="23" lean-forward="true" selection-start-line="831" selection-start-column="23" selection-end-line="831" selection-end-column="23" />
         </state>
       </provider>
     </entry>

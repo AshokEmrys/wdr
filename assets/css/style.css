@@ -250,7 +250,7 @@ label {
     width: 100%;
     padding-top: 30px;
     height: 100px;
-    background-image:url("../..//images/home/slider/slider1.jpg");
+    background-image:url("../images/home/slider/slider1.jpg");
     background-position: center center;
     transition: 0.8s;
 }
@@ -749,7 +749,7 @@ ul {
 .jkl-home-parallex {
     position: relative;
     top: 0px;
-    background-image: url("../..//images/home/home-parallex-bg-1.jpg");
+    background-image: url("../images/home/home-parallex-bg-1.jpg");
     min-height: 800px;
     background-attachment: fixed;
     background-position: center;
@@ -758,7 +758,7 @@ ul {
 }
 
 .jkl-yoga-parallex {
-    background-image: url("../..//images/yoga.jpg");
+    background-image: url("../images/yoga.jpg");
 }
 .jkl-home-parallex::before {
     content: "";
@@ -834,7 +834,7 @@ ul {
     left: 0px;
     width: 100%;
     height: 160%;
-    background-image: url("../..//images/home/home-update-bg.jpg");
+    background-image: url("../images/home/home-update-bg.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -845,7 +845,7 @@ ul {
 .jkl-counter {
     position: relative;
     top: 0px;
-    background-image: url("../..//images/home/counter-bg.jpg");
+    background-image: url("../images/home/counter-bg.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -894,7 +894,7 @@ ul {
 /* Student Life */
 
 .jkl-scroll-container {
-    background-image: url("../..//images/home/adoption-pg-bg.jpg");
+    background-image: url("../images/home/adoption-pg-bg.jpg");
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
