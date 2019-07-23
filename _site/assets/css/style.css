@@ -800,7 +800,7 @@ img {
     height: 130%;
     background: #000;
     opacity: .5;
-    z-index:1
+    z-index:0
 }
 .jkl-home-updates .container-fluid {
     z-index: 2;
@@ -916,4 +916,12 @@ img {
     bottom: -15px;
     right: 0;
     margin: auto;
+}
+
+.navbar-.navbar-toggler>.close {
+    display: inline;
+}
+.navbar-toggler.collapsed>.close,
+.navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+    display: none;
 }
