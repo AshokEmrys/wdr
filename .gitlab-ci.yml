@@ -13,3 +13,4 @@ pages:
     - public
   only:
   - develop
+  git remote add origin git@github.com:ParokshaX/wdr.gi

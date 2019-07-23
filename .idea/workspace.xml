@@ -174,8 +174,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+            <state relative-caret-position="300">
+              <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -429,16 +429,15 @@
       <updated>1563431835705</updated>
       <workItem from="1563431837444" duration="8894000" />
       <workItem from="1563770304357" duration="5964000" />
-      <workItem from="1563793715406" duration="29832000" />
+      <workItem from="1563793715406" duration="30564000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44690000" />
+    <option name="totallyTimeSpent" value="45422000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="3008" height="1669" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18111818" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1017,8 +1016,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        <state relative-caret-position="300">
+          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
         </state>
       </provider>
     </entry>
