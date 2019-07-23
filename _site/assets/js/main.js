@@ -1,13 +1,12 @@
 
 // Slider
 $(document).ready(function() {
-
-    mainSlider();
-    scrollFunction();
     AOS.init({
         offset: 200,
         duration: 1200,
     });
+    mainSlider();
+    scrollFunction();
 
 })
 

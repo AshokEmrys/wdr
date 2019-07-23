@@ -754,7 +754,10 @@ label {
     margin-bottom: 20px;
     display: inline-block;
 }
-
+.features-wrap {
+    border: 1px solid #e6e6e6;
+    padding: 50px 30px;
+}
 .features-wrap:hover {
     background-image: url(../img/about/5.jpg);
     background-size: cover;
