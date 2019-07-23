@@ -925,3 +925,7 @@ img {
 .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
     display: none;
 }
+
+main {
+    overflow: hidden;
+}
