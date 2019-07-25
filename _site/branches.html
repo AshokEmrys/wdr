@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> Branches</title>
+    <meta charset="UTF-8">
+    <title>Branches</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/style1.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive1.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/card_scroll.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/icon-font.min.css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type='text/javascript'>
+  /* global google */
+/* global MarkerClusterer */
+// eslint-disable-next-line no-unused-vars
+var jekyllMaps = (function() {
+  'use strict'
+  var clusterSettings = {}
+  var clusterReady = false
+  var mapReady = false
+  var options = {}
+  var data = []
+  var maps = []
+
+  return {
+    initializeMap: initializeMap,
+    initializeCluster: initializeCluster,
+    register: register
+  }
+
+  /**
+   * Setup Google Maps options and call renderer.
+   */
+  function initializeMap() {
+    options = {
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      center: new google.maps.LatLng(0, 0)
+    }
+    mapReady = true
+    render()
+  }
+
+  /**
+   * Register map data to be rendered once Google Maps API is loaded.
+   *
+   * @param string id
+   * @param Array locations
+   * @param Object settings
+   */
+  function register(id, locations, options) {
+    data.push({ id: id, locations: locations, options: options })
+    render()
+  }
+
+  /**
+   * Render maps data if Google Maps API is loaded.
+   */
+  function render() {
+    if (!mapReady) return
+
+    while (data.length > 0) {
+      var item = data.pop()
+      var bounds = new google.maps.LatLngBounds()
+      var mapOptions = Object.assign({}, options, item.options)
+      var map = new google.maps.Map(
+        document.getElementById(item.id),
+        mapOptions
+      )
+      var infoWindow = new google.maps.InfoWindow()
+      var markers = item.locations.map(createMarker)
+
+      map.fitBounds(bounds)
+      google.maps.event.addListenerOnce(map, 'idle', function() {
+        if (this.customZoom) this.setZoom(this.customZoom)
+      })
+      if (mapOptions.useCluster) {
+        maps.push({ map: map, markers: markers })
+        processCluster()
+      }
+    }
+
+    function createMarker(location) {
+      var position = new google.maps.LatLng(
+        location.latitude,
+        location.longitude
+      )
+      bounds.extend(position)
+      if (!mapOptions.showMarker) return false
+
+      var marker = new google.maps.Marker({
+        position: position,
+        title: location.title,
+        image: location.image,
+        popup_html: location.popup_html,
+        icon: location.icon || mapOptions.markerIcon,
+        url: markerUrl(mapOptions.baseUrl, location.url),
+        url_text: location.url_text,
+        map: map
+      })
+      if (mapOptions.showMarkerPopup) marker.addListener('click', markerPopup)
+
+      return marker
+    }
+
+    function markerUrl(baseUrl, url) {
+      if (/^(https?|\/\/)/.test(url)) return url
+
+      return url.length > 0 ? baseUrl + url : ''
+    }
+
+    function markerPopup() {
+      var content = '<div class="map-info-window"><h5>' + this.title + '</h5>'
+      if (this.popup_html.length > 0) {
+        content += this.popup_html
+      }
+      else {
+        var imageTag =
+          this.image.length > 0 &&
+          '<img src="' + this.image + '" alt="' + this.title + '"/>'
+        if (this.url.length > 0) {
+          var linkContent = imageTag || this.url_text || 'View'
+          content += '<a href="' + this.url + '">' + linkContent + '</a>'
+        } else if (imageTag) {
+          content += imageTag
+        }
+      }
+      content += '</div>'
+      infoWindow.setContent(content)
+      infoWindow.open(map, this)
+    }
+  }
+
+  function initializeCluster(settings) {
+    clusterReady = true
+    clusterSettings = settings || {}
+    processCluster()
+  }
+
+  function processCluster() {
+    if (!clusterReady) return
+
+    while (maps.length > 0) {
+      var obj = maps.pop()
+      // eslint-disable-next-line no-new
+      new MarkerClusterer(obj.map, obj.markers, {
+        gridSize: clusterSettings.grid_size || 25,
+        imagePath:
+          'https://cdn.rawgit.com/googlemaps/js-marker-clusterer/gh-pages/images/m'
+      })
+    }
+  }
+})()
+/* Object.assign polyfill */
+if (typeof Object.assign !== 'function') {
+  Object.assign = function(target) {
+    'use strict'
+    if (target == null) {
+      throw new TypeError('Cannot convert undefined or null to object')
+    }
+
+    target = Object(target)
+    for (var index = 1; index < arguments.length; index++) {
+      var source = arguments[index]
+      if (source != null) {
+        for (var key in source) {
+          if (Object.prototype.hasOwnProperty.call(source, key)) {
+            target[key] = source[key]
+          }
+        }
+      }
+    }
+    return target
+  }
+}
+
+</script>
+<script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyD-J-9ESM35ubrujKVxK6S6MmY6BgzBhUY&callback=jekyllMaps.initializeMap'></script>
+
+<script async defer src='https://cdn.rawgit.com/googlemaps/js-marker-clusterer/gh-pages/src/markerclusterer.js'
+        onload='jekyllMaps.initializeCluster({})'></script>
+
+</head>
+<body>
+<header>
+    <div class="jkl_header">
+        <div class="jkl-header-bg text-center d-flex justify-content-center align-items-center">
+    <h1> Branches </h1>
+</div>
+        <div class="jkl-menu">
+    <div class="container">
+        <nav id="jk-nav" class="navbar navbar-expand-lg  ">
+            <div id= "menu-logo" class="jkl-header-logo">
+                <a href="#"><img src="assets/images/logo.png" alt="Logo"></a></div>
+            <button class="navbar-toggler navbar-dark collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle     navigation">
+                <span class="my-1 mx-2 close" style="color:#f8f9fa">X</span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarNavDropdown" class="navbar-collapse collapse">
+                <ul class="navbar-nav mr-auto">
+                </ul>
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/wdr">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="student-life.html">Student Life</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="academics.html">Academics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="residental-system.html">Residental System</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="branches.html">Branches</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="alumni.html">Alumni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+</div>
+    </div>
+</header>
+<main>
+
+    <section>
+        <div id='4d8403a8-a8cc-4d16-979f-ccfda2e8ab71' style='width:600px;height:400px;'></div>
+<script type='text/javascript'>
+  jekyllMaps.register(
+    '4d8403a8-a8cc-4d16-979f-ccfda2e8ab71',
+    [{"latitude":48.8587741,"longitude":2.2074741,"title":"Paris","icon":null,"url":"http://google.fr","url_text":null,"image":"","popup_html":""},{"latitude":40.4378698,"longitude":-3.8196204,"title":"Madrid","icon":null,"url":"http://google.es","url_text":null,"image":"","popup_html":""}],
+    {"baseUrl":"/","useCluster":true,"showMarker":true,"showMarkerPopup":true,"markerIcon":null}
+  );
+</script>
+
+    </section>
+
+
+
+</main>
+
+
+<footer>
+    <svg xmlns="https://www.w3.org/2000/svg" class="curve-container__curve curve-one" viewBox="0 0 1440 68" style="vertical-align:bottom" enable-background="new 0 0 1440 68"><path d="m1622.3 1937.7c0 0-410.7 169.1-913.4 75.5-502.7-93.6-977.7 56.3-977.7 56.3v440h1891.1v-571.8" fill="#000000" transform="translate(0-1977)"></path></svg>
+
+<div class="container-fluid" style="background-color: black">
+    <div class="container jkl-footer"  >
+        <div class="jkl-footer-logo">
+            <img src="assets/images/logo.png"></img>
+        </div>
+        <div class="row d-flex justify-content-between" >
+            <div class="col-xl-4 col-lg-4 mb-50">
+                <div class="jkl-footer-addr-widget">
+                    <div class="jkl-footer-widget-heading">
+                        <h2>Lorem Sum Dolor Si</h2>
+                    </div>
+
+                    <div class="jkl-footer-text">
+                        <p>13/4, Sum dolor sit amet,<br/>Consec tetur, Adipisicing,<br/>Incididuntut - 234556 </p>
+                        <p><span class="fa fa-envelope" aria-hidden="true"></span> <a href="mailto:leron@example.com">leron@example.com</a><br/>
+                            <span class="fa fa-phone fa-rotate-180"></span><a href="tel:+919876543210">+91-9876543210</a></p>
+                    </div>
+                    <div class="jkl-footer-social-icon">
+                        <span>Follow us</span>
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter twitter-bg"></i></a>
+                        <a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p google-bg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                <div class="jkl-footer-widget">
+                    <div class="jkl-footer-widget-heading">
+                        <h3>Useful Links</h3>
+                    </div>
+                    <ul>
+                        <li><a href="/wdr">Home</a></li>
+                        <li><a href="student-life.html">Student Life</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="residental-system.html">Residental System</a></li>
+                        <li><a href="branches.html">Branches</a></li>
+                        <li><a href="alumni.html">Alumni</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</footer>
+<script src="assets/js/jquery.slim.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/aos.js"></script>
+
+<script src="assets/js/velocity.min.js"></script>
+<script src="assets/js/velocity.ui.min.js"></script>
+<script src="assets/js/card_scroll.js"></script>
+<script src="assets/js/modernizr.js"></script>
+<script src="assets/js/aos.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

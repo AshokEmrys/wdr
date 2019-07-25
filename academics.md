@@ -1,0 +1,4 @@
+---
+layout: academics
+title: Academics
+---

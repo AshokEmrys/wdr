@@ -4,3 +4,9 @@ defaults:
       path: ""
     values:
       layout: "default"
+plugins:
+  - jekyll-maps
+
+maps:
+  google:
+    api_key: AIzaSyD-J-9ESM35ubrujKVxK6S6MmY6BgzBhUY
