@@ -130,11 +130,11 @@ function scrollFunction() {
         }
             let expHeight = this.headerLogoHeight - heightDiff * scrollTop / movePx
             if (expHeight >= finalHeight) {
-                $("#menu-logo").height(expHeight)
-                $("#menu-logo").width(expHeight)
+                $("#menu-logo").height(expHeight);
+                $("#menu-logo").width(expHeight);
             } else {
-                $("#menu-logo").height(finalHeight)
-                $("#menu-logo").width(finalHeight)
+                $("#menu-logo").height(finalHeight);
+                $("#menu-logo").width(finalHeight);
                 $(".jkl-menu").css("background-color", "#000000BC")
             }
 
