@@ -19,176 +19,6 @@
     <link rel="stylesheet" href="assets/css/icon-font.min.css">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script type='text/javascript'>
-  /* global google */
-/* global MarkerClusterer */
-// eslint-disable-next-line no-unused-vars
-var jekyllMaps = (function() {
-  'use strict'
-  var clusterSettings = {}
-  var clusterReady = false
-  var mapReady = false
-  var options = {}
-  var data = []
-  var maps = []
-
-  return {
-    initializeMap: initializeMap,
-    initializeCluster: initializeCluster,
-    register: register
-  }
-
-  /**
-   * Setup Google Maps options and call renderer.
-   */
-  function initializeMap() {
-    options = {
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      center: new google.maps.LatLng(0, 0)
-    }
-    mapReady = true
-    render()
-  }
-
-  /**
-   * Register map data to be rendered once Google Maps API is loaded.
-   *
-   * @param string id
-   * @param Array locations
-   * @param Object settings
-   */
-  function register(id, locations, options) {
-    data.push({ id: id, locations: locations, options: options })
-    render()
-  }
-
-  /**
-   * Render maps data if Google Maps API is loaded.
-   */
-  function render() {
-    if (!mapReady) return
-
-    while (data.length > 0) {
-      var item = data.pop()
-      var bounds = new google.maps.LatLngBounds()
-      var mapOptions = Object.assign({}, options, item.options)
-      var map = new google.maps.Map(
-        document.getElementById(item.id),
-        mapOptions
-      )
-      var infoWindow = new google.maps.InfoWindow()
-      var markers = item.locations.map(createMarker)
-
-      map.fitBounds(bounds)
-      google.maps.event.addListenerOnce(map, 'idle', function() {
-        if (this.customZoom) this.setZoom(this.customZoom)
-      })
-      if (mapOptions.useCluster) {
-        maps.push({ map: map, markers: markers })
-        processCluster()
-      }
-    }
-
-    function createMarker(location) {
-      var position = new google.maps.LatLng(
-        location.latitude,
-        location.longitude
-      )
-      bounds.extend(position)
-      if (!mapOptions.showMarker) return false
-
-      var marker = new google.maps.Marker({
-        position: position,
-        title: location.title,
-        image: location.image,
-        popup_html: location.popup_html,
-        icon: location.icon || mapOptions.markerIcon,
-        url: markerUrl(mapOptions.baseUrl, location.url),
-        url_text: location.url_text,
-        map: map
-      })
-      if (mapOptions.showMarkerPopup) marker.addListener('click', markerPopup)
-
-      return marker
-    }
-
-    function markerUrl(baseUrl, url) {
-      if (/^(https?|\/\/)/.test(url)) return url
-
-      return url.length > 0 ? baseUrl + url : ''
-    }
-
-    function markerPopup() {
-      var content = '<div class="map-info-window"><h5>' + this.title + '</h5>'
-      if (this.popup_html.length > 0) {
-        content += this.popup_html
-      }
-      else {
-        var imageTag =
-          this.image.length > 0 &&
-          '<img src="' + this.image + '" alt="' + this.title + '"/>'
-        if (this.url.length > 0) {
-          var linkContent = imageTag || this.url_text || 'View'
-          content += '<a href="' + this.url + '">' + linkContent + '</a>'
-        } else if (imageTag) {
-          content += imageTag
-        }
-      }
-      content += '</div>'
-      infoWindow.setContent(content)
-      infoWindow.open(map, this)
-    }
-  }
-
-  function initializeCluster(settings) {
-    clusterReady = true
-    clusterSettings = settings || {}
-    processCluster()
-  }
-
-  function processCluster() {
-    if (!clusterReady) return
-
-    while (maps.length > 0) {
-      var obj = maps.pop()
-      // eslint-disable-next-line no-new
-      new MarkerClusterer(obj.map, obj.markers, {
-        gridSize: clusterSettings.grid_size || 25,
-        imagePath:
-          'https://cdn.rawgit.com/googlemaps/js-marker-clusterer/gh-pages/images/m'
-      })
-    }
-  }
-})()
-/* Object.assign polyfill */
-if (typeof Object.assign !== 'function') {
-  Object.assign = function(target) {
-    'use strict'
-    if (target == null) {
-      throw new TypeError('Cannot convert undefined or null to object')
-    }
-
-    target = Object(target)
-    for (var index = 1; index < arguments.length; index++) {
-      var source = arguments[index]
-      if (source != null) {
-        for (var key in source) {
-          if (Object.prototype.hasOwnProperty.call(source, key)) {
-            target[key] = source[key]
-          }
-        }
-      }
-    }
-    return target
-  }
-}
-
-</script>
-<script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyD-J-9ESM35ubrujKVxK6S6MmY6BgzBhUY&callback=jekyllMaps.initializeMap'></script>
-
-<script async defer src='https://cdn.rawgit.com/googlemaps/js-marker-clusterer/gh-pages/src/markerclusterer.js'
-        onload='jekyllMaps.initializeCluster({})'></script>
-
 </head>
 <body>
 <header>
@@ -243,18 +73,66 @@ if (typeof Object.assign !== 'function') {
 </header>
 <main>
 
-    <section>
-        <div id='4d8403a8-a8cc-4d16-979f-ccfda2e8ab71' style='width:600px;height:400px;'></div>
-<script type='text/javascript'>
-  jekyllMaps.register(
-    '4d8403a8-a8cc-4d16-979f-ccfda2e8ab71',
-    [{"latitude":48.8587741,"longitude":2.2074741,"title":"Paris","icon":null,"url":"http://google.fr","url_text":null,"image":"","popup_html":""},{"latitude":40.4378698,"longitude":-3.8196204,"title":"Madrid","icon":null,"url":"http://google.es","url_text":null,"image":"","popup_html":""}],
-    {"baseUrl":"/","useCluster":true,"showMarker":true,"showMarkerPopup":true,"markerIcon":null}
-  );
-</script>
+    <main>
+        <section class="grey-bg">
+            <div class="container-fluid pt-50 pb-50">
+                <div class="container">
+                    <div class="row pt-60">
+                        <div class="col-xl-6 col-lg-6 mb-20 md-margin" data-aos="fade-down">
+                            <div class="jkl-home-card-img">
+                                <img src="assets/images/home/home-card2.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 mb-40" data-aos="zoom-in-up">
+                            <div class="section-title">
+                                <h2>Branches</h2>
+                            </div>
+                            <div class="about-content">
+                                <p>Nullam eget purus molestie, tempus massa quis, tempor urna. Nam nec nibh egestas,
+                                    rhoncus
+                                    erat sed, ullamcorper justo. Etiam in euismod elit. Integer blandit, massa a
+                                    volutpat
+                                    tempus, metus nisi lobortis nibh, at placerat ipsum nibh sed sem. Cras fermentum
+                                    velit
+                                    et quam fermentum sollicitudin.
+                                    <br> <br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                                    ligula
+                                    eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                                    montes,
+                                    nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                                    quis,
+                                    sem. Nulla consequat massa quis enim.</p>
+                            </div>
+                        </div>
 
-    </section>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+
+        <section class="bg-light">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <div class="portfolio-menu map-menu mt-25 mb-25 text-center" style="display:block;">
+                                <button style="font-size: 18px;text-transform: none;color:#ff5e14" data-filter="">All</button>
+                                <button style="font-size: 18px;text-transform: none" class="p-item"
+                                        data-filter="state1">State 1</button>
+                                <button style="font-size: 18px;text-transform: none" class="p-item"
+                                        data-filter="state2">State 2</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="map-canvas"></div>
+
+
+        </section>
+    </main>
 
 
 </main>
@@ -321,6 +199,111 @@ if (typeof Object.assign !== 'function') {
 <script src="assets/js/modernizr.js"></script>
 <script src="assets/js/aos.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-J-9ESM35ubrujKVxK6S6MmY6BgzBhUY"></script>
 
+<script>
+    var gmarkers1 = [];
+    var markers1 = [];
+
+    var infowindow = new google.maps.InfoWindow({
+        content: ''
+    });
+
+    // Our markers
+    markers1 = [
+        ['0', '<div> <h4>Lorem ipsum</h4> <p>13/4, Sum dolor sit amet,<br/>Consec tetur, Adipisicing,<br/>Incididuntut - 234556 <br/><span class="fa fa-envelope" aria-hidden="true"> </span> <a href="mailto:leron@example.com"> leron@example.com</a><br/><span class="fa fa-phone fa-rotate-180"> </span><a href="tel:+919876543210"> +91-9876543210</a></p></div>',
+            20.593683, 78.962883, 'state2'],
+        ['0', '<div> <h4>Lorem ipsum</h4> <p>13/4, Sum dolor sit amet,<br/>Consec tetur, Adipisicing,<br/>Incididuntut - 234556 <br/><span class="fa fa-envelope" aria-hidden="true"> </span> <a href="mailto:leron@example.com"> leron@example.com</a><br/><span class="fa fa-phone fa-rotate-180"> </span><a href="tel:+919876543210"> +91-9876543210</a></p></div>',
+            20.093683, 78.22883, 'state1'],
+        ['0', '<div> <h4>Lorem ipsum</h4> <p>13/4, Sum dolor sit amet,<br/>Consec tetur, Adipisicing,<br/>Incididuntut - 234556 <br/><span class="fa fa-envelope" aria-hidden="true"> </span> <a href="mailto:leron@example.com"> leron@example.com</a><br/><span class="fa fa-phone fa-rotate-180"> </span><a href="tel:+919876543210"> +91-9876543210</a></p></div>',
+            20.893683, 78.12883, 'state2'],
+        ['0', '<div> <h4>Lorem ipsum</h4> <p>13/4, Sum dolor sit amet,<br/>Consec tetur, Adipisicing,<br/>Incididuntut - 234556 <br/><span class="fa fa-envelope" aria-hidden="true"> </span> <a href="mailto:leron@example.com"> leron@example.com</a><br/><span class="fa fa-phone fa-rotate-180"> </span><a href="tel:+919876543210"> +91-9876543210</a></p></div>',
+            20.293683, 78.962883, 'state1'],
+        ['0', '<div> <h4>Lorem ipsum</h4> <p>13/4, Sum dolor sit amet,<br/>Consec tetur, Adipisicing,<br/>Incididuntut - 234556 <br/><span class="fa fa-envelope" aria-hidden="true"> </span> <a href="mailto:leron@example.com"> leron@example.com</a><br/><span class="fa fa-phone fa-rotate-180"> </span><a href="tel:+919876543210"> +91-9876543210</a></p></div>',
+            20.083, 78.902883, 'state2'],
+
+
+
+    ];
+
+    /**
+     * Function to init map
+     */
+
+    function initialize() {
+        var center = new google.maps.LatLng(20.593683, 78.962883);
+        var mapOptions = {
+            zoom: 6,
+            center: center,
+            mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+
+        map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+        for (i = 0; i < markers1.length; i++) {
+            addMarker(markers1[i]);
+        }
+    }
+
+    /**
+     * Function to add marker to map
+     */
+
+    function addMarker(marker) {
+        var category = marker[4];
+        var title = marker[1];
+        var pos = new google.maps.LatLng(marker[2], marker[3]);
+        var content = marker[1];
+
+        marker1 = new google.maps.Marker({
+            title: title,
+            position: pos,
+            category: category,
+            map: map
+        });
+
+        gmarkers1.push(marker1);
+
+        // Marker click listener
+        google.maps.event.addListener(marker1, 'click', (function (marker1, content) {
+            return function () {
+                console.log('Gmarker 1 gets pushed');
+                infowindow.setContent(content);
+                infowindow.open(map, marker1);
+                map.panTo(this.getPosition());
+                //map.setZoom(15);
+            }
+        })(marker1, content));
+    }
+
+    /**
+     * Function to filter markers by category
+     */
+
+    filterMarkers = function (category) {
+        for (i = 0; i < markers1.length; i++) {
+            marker = gmarkers1[i];
+            // If is same category or category not picked
+            if (marker.category == category || category.length === 0) {
+                marker.setVisible(true);
+            }
+            // Categories don't match
+            else {
+                marker.setVisible(false);
+            }
+        }
+    }
+
+    // Init map
+    initialize();
+    console.log("sddF")
+
+    $(".map-menu").on("click", "button", function () {
+        var filterValue = $(this).attr("data-filter");
+        $(".map-menu").css("color", "#000000");
+        $(this).css("color", "#ff5e14");
+        filterMarkers(filterValue)
+    });
+
+</script>
 </body>
 </html>
