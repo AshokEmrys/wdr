@@ -250,7 +250,7 @@ label {
     width: 100%;
     padding-top: 30px;
     height: 100px;
-    background-image:url("../images/home/slider/slider1.jpg");
+    background-image:url("../images/header_bg.jpg");
     background-position: center center;
     transition: 0.8s;
 }
@@ -366,13 +366,13 @@ label {
 }
 
 .slick-slide:nth-child(1n)  .jkl-slider-container {
-    background-image:url("../images/home/slider/slider1.jpg");
+    background-image:url("../images/home_slider1.jpg");
 }
 .slick-slide:nth-child(2n) .jkl-slider-container {
-    background-image: url("../images/home/slider/slider2.jpg");
+    background-image: url("../images/home_slider2.jpg");
 }
 .slick-slide:nth-child(3n) .jkl-slider-container {
-    background-image: url("../images/home/slider/slider3.jpg");
+    background-image: url("../images/home_slider3.jpg");
 }
 
 /* slick dots */
@@ -752,7 +752,7 @@ img {
 .jkl-home-parallex {
     position: relative;
     top: 0px;
-    background-image: url("../images/home/home-parallex-bg-1.jpg");
+    background-image: url("../images/home-section2-bg.jpg");
     min-height: 800px;
     background-attachment: fixed;
     background-position: center;
