@@ -1,9 +1,11 @@
 ---
+title: Home
 page_title: Home
-layout: home
 sliders:
   '1':
-    title: "Cum sociis natoque  et \nmagnis dis parturient"
+    title: |-
+      Slider
+      magnis dis parturient
     desc: Nullam eget purus molestie, tempus massa quis, tempor urna. Nam nec nibh
       egestas, rhoncus erat sed,
   '2':
@@ -14,5 +16,6 @@ sliders:
     title: 'Cum sociis natoque penatibus et magnis dis parturient '
     desc: Nullam eget purus molestie, tempus massa quis, tempor urna. Nam nec nibh
       egestas, rhoncus erat sed,
+layout: home
 ---
 
