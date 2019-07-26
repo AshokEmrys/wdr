@@ -1,11 +1,13 @@
-- title: Paris
-  url: http://google.fr
+- title: Branch 1
+  phone: +919876543210
+  address: "test"
   location:
     latitude: 48.8587741
     longitude: 2.2074741
 
-- title: Madrid
-  url: http://google.es
+- title: Branch 2
+  phone: +919876543210
+  address: "test"
   location:
-    latitude: 40.4378698
-    longitude: -3.8196204
+    latitude: 48.8587741
+    longitude: 2.2074741
