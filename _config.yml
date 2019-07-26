@@ -1,21 +1,21 @@
+---
+title: Wdr
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 defaults:
-  -
-    scope:
-      path: ""
-    values:
-        layout: "default"
-    scope:
-      path: ""
-      type: "posts"
-    values:
-        page_title: "Updates"
-
-plugins: [jekyll-paginate]
-
+- scope:
+    path: ''
+    type: posts
+  values:
+    page_title: Updates
+plugins:
+- jekyll-paginate
 paginate: 10
 paginate_path: "/updates/:num/"
 baseurl: "/wdr"
-collections:
-  posts:
-    output: true
-    permalink: /:title.html

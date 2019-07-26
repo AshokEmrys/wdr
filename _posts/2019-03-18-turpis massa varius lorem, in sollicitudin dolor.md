@@ -1,6 +1,7 @@
 ---
+title: Volutpat, nunc purus vehicula arcu, eget volutpat
+date: 2019-03-18 00:00:00 Z
 layout: post
-title:  "Volutpat, nunc purus vehicula arcu, eget volutpat"
 ---
 
 Etiam feugiat sollicitudin tristique. Aenean turpis quam, gravida posuere eleifend tincidunt, rhoncus in nisi. Integer sit amet magna vitae ligula elementum consectetur. Curabitur eu neque enim. Duis at ex in libero sollicitudin ultricies tincidunt et neque. Duis arcu tortor, eleifend vel tristique ac, aliquam quis tortor. Curabitur at posuere dolor. Quisque molestie, lorem non rutrum interdum, mauris sem rutrum augue, sed faucibus mauris nunc non quam. Maecenas egestas odio tortor, ac dignissim lectus molestie lacinia. Aliquam nunc leo, volutpat nec elementum id, pretium faucibus nunc. Praesent vitae arcu non turpis pretium congue. Etiam cursus a ante dapibus suscipit. Donec dignissim semper nulla, ornare molestie metus blandit vitae. Proin non diam ut erat vehicula dictum. Quisque vel nulla sit amet velit tincidunt mollis. Duis massa neque, pellentesque et consectetur ac, hendrerit sit amet ante.

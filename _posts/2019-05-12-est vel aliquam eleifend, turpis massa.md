@@ -1,6 +1,7 @@
 ---
+title: Morbi fringilla vehicula dignissim. In sed dui vitae eros pul
+date: 2019-05-12 00:00:00 Z
 layout: post
-title:  "Morbi fringilla vehicula dignissim. In sed dui vitae eros pul"
 ---
 
 Proin egestas quis nisl consequat finibus. Donec pellentesque non magna condimentum ultrices. Proin scelerisque eget nisi sit amet interdum. Pellentesque quis purus tempus, bibendum lorem at, fringilla tellus. Vivamus mattis mauris et lorem ultricies semper. Cras odio dui, tincidunt eget nisi vel, hendrerit dapibus velit. Nulla facilisi. Morbi fringilla vehicula dignissim. In sed dui vitae eros pulvinar consequat. Integer eros quam, finibus quis faucibus dapibus, dictum eget neque.
