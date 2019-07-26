@@ -18,11 +18,4 @@ plugins:
 - jekyll-paginate
 paginate: 10
 paginate_path: "/updates/:num/"
-
-collections:
-  posts:
-    output: true
-    permalink: /:title.html
-
 baseurl: "/wdr"
-
