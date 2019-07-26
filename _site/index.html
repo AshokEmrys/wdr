@@ -444,7 +444,7 @@
 <script src="assets/js/aos.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-J-9ESM35ubrujKVxK6S6MmY6BgzBhUY"></script>
-
+<script src="assets/js/markerclusterer.js"></script>
 <script>
     var gmarkers1 = [];
     var markers1 = [];
@@ -486,6 +486,9 @@
         for (i = 0; i < markers1.length; i++) {
             addMarker(markers1[i]);
         }
+        var markerCluster = new MarkerClusterer(map, gmarkers1,
+            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+
     }
 
     /**
