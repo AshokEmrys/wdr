@@ -461,8 +461,6 @@
         for (i = 0; i < markers1.length; i++) {
             addMarker(markers1[i]);
         }
-        var markerCluster = new MarkerClusterer(map, gmarkers1,
-            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
 
     }
 
@@ -513,10 +511,14 @@
                 marker.setVisible(false);
             }
         }
+        markerCluster.repaint();
     }
 
     // Init map
     initialize();
+    var markerCluster = new MarkerClusterer(map, gmarkers1,
+        { ignoreHidden: true, imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+
     console.log("sddF")
 
     $(".map-menu").on("click", "button", function () {
