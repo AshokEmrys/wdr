@@ -5,8 +5,7 @@ sliders:
   i1:
     title: "Cum sociis natoque  et  \ndis  parturient"
     desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-      ligula eget dolor. \nAenean massa. Cum sociis natoque penatibus et magnis dis
-      parturient "
+      ligula eget dolor.  \nCum sociis natoque penatibus et magnis dis parturient "
     url: "/about-us.html"
   i2:
     title: "Cum sociis natoque  et  \ndis  parturient"
