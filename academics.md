@@ -14,7 +14,7 @@ page_title: Academics
                             <h2>Tender Smiles</h2>
                         </div>
                         <div class="about-content">
-                            <p>Nullam eget purus molestie, tempus massa quis, tempor urna. Nam nec nibh egestas,
+                            <p>Lllam eget purus molestie, tempus massa quis, tempor urna. Nam nec nibh egestas,
                                 rhoncus
                                 erat sed, ullamcorper justo. Etiam in euismod elit. Integer blandit, massa a
                                 volutpat
