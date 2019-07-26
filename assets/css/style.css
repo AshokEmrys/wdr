@@ -760,10 +760,21 @@ img {
     background-size: cover;
 }
 
-.jkl-yoga-parallex {
-    background-image: url("../images/yoga.jpg");
+.jkl-extra-activity-parallex {
+    position: relative;
+    top: 0px;
+    background-image: url("../images/student-life-section5-bg.jpg");
+    min-height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.jkl-home-parallex::before {
+
+.jkl-yoga-parallex {
+    background-image: url("../images/student-life-section4-bg.jpg");
+}
+.jkl-home-parallex::before, .jkl-extra-activity-parallex::before {
     content: "";
     position: absolute;
     top: 0px;
@@ -774,10 +785,10 @@ img {
     opacity: .5;
     z-index:0
 }
-.jkl-home-parallex .container-fluid {
+.jkl-home-parallex .container-fluid, .jkl-extra-activity-parallex .container-fluid {
     z-index: 1;
 }
-.jkl-home-parallex .container {
+.jkl-home-parallex .container, .jkl-extra-activity-parallex .container {
     background-color: #000000a6;
     padding-left: 40px;
     padding-right: 40px;
@@ -911,7 +922,7 @@ img {
 /* Student Life */
 
 .jkl-scroll-container {
-    background-image: url("../images/home/adoption-pg-bg.jpg");
+    background-image: url("../images/student-life-section2-bg.jpg");
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
