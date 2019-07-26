@@ -518,7 +518,9 @@
 
     $(".map-menu").on("click", "button", function () {
         var filterValue = $(this).attr("data-filter");
-        $(".map-menu").css("color", "#000000");
+        $(".map-menu-item").each(function() {
+            $(this).css("color", "#000000");
+        })
         $(this).css("color", "#ff5e14");
         filterMarkers(filterValue)
     });

@@ -118,6 +118,8 @@
                     </div>
 
                 </div>
+            </section>
+            <section class="cd-section jkl-home-about-info-white-text ">
                 <div class="row pt-60">
                     <div class="col-xl-6 col-lg-6 mb-40" data-aos="zoom-in-up">
                         <div class="section-title">
@@ -154,6 +156,8 @@
                     </div>
 
                 </div>
+            </section>
+            <section class="cd-section jkl-home-about-info-white-text ">
                 <div class="row pt-60">
                     <div class="col-xl-6 col-lg-6 mb-40" data-aos="zoom-in-up">
                         <div class="section-title">
@@ -395,7 +399,7 @@
         </div>
     </section>
 
-    <section class="grey-bg">
+    <section class="">
         <div class="container-fluid pt-50">
             <div class="container">
                <div class="row">
@@ -609,7 +613,9 @@
 
     $(".map-menu").on("click", "button", function () {
         var filterValue = $(this).attr("data-filter");
-        $(".map-menu").css("color", "#000000");
+        $(".map-menu-item").each(function() {
+            $(this).css("color", "#000000");
+        })
         $(this).css("color", "#ff5e14");
         filterMarkers(filterValue)
     });

@@ -252,7 +252,7 @@
                             <p>Quisque fringilla nisl non lacus elementum, eget bibendum orci ornare. Ut in ligula quis lorem sagittis rhoncus.</p>
                             <div class="">
 
-                                <a class="-" href="/services/designs_interfaces">Read More</a>
+                                <a style="font-size: 14px; font-weight: 600; color: #ff5e14;" href="#">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -267,7 +267,7 @@
                             <p>Quisque fringilla nisl non lacus elementum, eget bibendum orci ornare. Ut in ligula quis lorem sagittis rhoncus.</p>
                             <div class="">
 
-                                <a class="" href="/services/designs_interfaces">Read More</a>
+                                <a class="" style="font-size: 14px; font-weight: 600; color: #ff5e14;" href="#">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -282,7 +282,7 @@
                             <p>Quisque fringilla nisl non lacus elementum, eget bibendum orci ornare. Ut in ligula quis lorem sagittis rhoncus.</p>
                             <div class="">
 
-                                <a class="" href="/services/designs_interfaces">Read More</a>
+                                <a class="" style="font-size: 14px; font-weight: 600; color: #ff5e14;" href="#">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -297,7 +297,7 @@
                             <p>Quisque fringilla nisl non lacus elementum, eget bibendum orci ornare. Ut in ligula quis lorem sagittis rhoncus.</p>
                             <div class="">
 
-                                <a class="" href="/services/designs_interfaces">Read More</a>
+                                <a class="" style="font-size: 14px; font-weight: 600; color: #ff5e14;" href="#">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -312,7 +312,7 @@
                             <p>Quisque fringilla nisl non lacus elementum, eget bibendum orci ornare. Ut in ligula quis lorem sagittis rhoncus.</p>
                             <div class="">
 
-                                <a class="" href="/services/designs_interfaces">Read More</a>
+                                <a class="" style="font-size: 14px; font-weight: 600; color: #ff5e14;" href="#">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -327,7 +327,7 @@
                             <p>Quisque fringilla nisl non lacus elementum, eget bibendum orci ornare. Ut in ligula quis lorem sagittis rhoncus.</p>
                             <div class="">
 
-                                <a class="-wrap" href="/services/designs_interfaces">Read More</a>
+                                <a class="-wrap" style="font-size: 14px; font-weight: 600; color: #ff5e14;" href="#">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -543,7 +543,9 @@
 
     $(".map-menu").on("click", "button", function () {
         var filterValue = $(this).attr("data-filter");
-        $(".map-menu").css("color", "#000000");
+        $(".map-menu-item").each(function() {
+            $(this).css("color", "#000000");
+        })
         $(this).css("color", "#ff5e14");
         filterMarkers(filterValue)
     });
