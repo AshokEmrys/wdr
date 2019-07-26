@@ -1048,3 +1048,16 @@ main {
     background-size: cover;
     z-index:-1
 }
+
+.jkl-updates-bg::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    content:"";
+    padding-bottom: 300px;
+    height: 100%;
+    box-sizing: content-box;
+    background-color: #dee2e6;
+    z-index:-1
+}

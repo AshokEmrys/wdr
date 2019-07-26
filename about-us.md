@@ -1,4 +1,4 @@
 ---
 layout: about-us
-title: About Us
+page_title: About Us
 ---

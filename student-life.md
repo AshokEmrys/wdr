@@ -1,4 +1,4 @@
 ---
 layout: student-life
-title: Student Life
+page_title: Student Life
 ---
