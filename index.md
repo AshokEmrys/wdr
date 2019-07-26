@@ -1,6 +1,6 @@
 ---
+title: Home
 page_title: Home
-layout: home
 sliders:
     "i1":
         title: |-
@@ -87,7 +87,6 @@ sections:
                 url: /academics.html 
     i7:
         title: Updates                        
-
 
 
 ---
