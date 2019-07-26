@@ -4,7 +4,7 @@ page_title: Home
 sliders:
   '1':
     title: |-
-      Slider
+      Sliderf
       magnis dis parturient
     desc: Nullam eget purus molestie, tempus massa quis, tempor urna. Nam nec nibh
       egestas, rhoncus erat sed,
