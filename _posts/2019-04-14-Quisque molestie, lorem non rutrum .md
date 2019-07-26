@@ -1,6 +1,8 @@
 ---
+title: Duis arcu tortor, eleifend vel tristique ac, aliquam quis tortor. Curabitur
+  at posuere dolor
+date: 2019-04-14 00:00:00 Z
 layout: post
-title:  "Duis arcu tortor, eleifend vel tristique ac, aliquam quis tortor. Curabitur at posuere dolor"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices faucibus dignissim. Aliquam posuere eget purus at dignissim. Nunc luctus magna ligula, non convallis nunc tincidunt nec. Nullam semper odio sem, vel aliquam augue tristique eu. Nulla vel finibus mauris, non mattis arcu. Nulla bibendum metus nec arcu facilisis, non scelerisque arcu condimentum. Nunc metus erat, euismod id scelerisque non, consequat eu metus. Quisque sollicitudin ligula nec orci consectetur molestie.

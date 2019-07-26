@@ -1,7 +1,9 @@
 ---
+title: Aliquam nunc leo, volutpat nec elementum id, pretium faucibus nunc.
+date: 2019-05-23 00:00:00 Z
 layout: post
-title:  "Aliquam nunc leo, volutpat nec elementum id, pretium faucibus nunc."
 ---
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices faucibus dignissim. Aliquam posuere eget purus at dignissim. Nunc luctus magna ligula, non convallis nunc tincidunt nec. Nullam semper odio sem, vel aliquam augue tristique eu. Nulla vel finibus mauris, non mattis arcu. Nulla bibendum metus nec arcu facilisis, non scelerisque arcu condimentum. Nunc metus erat, euismod id scelerisque non, consequat eu metus. Quisque sollicitudin ligula nec orci consectetur molestie.
 
 Proin egestas quis nisl consequat finibus. Donec pellentesque non magna condimentum ultrices. Proin scelerisque eget nisi sit amet interdum. Pellentesque quis purus tempus, bibendum lorem at, fringilla tellus. Vivamus mattis mauris et lorem ultricies semper. Cras odio dui, tincidunt eget nisi vel, hendrerit dapibus velit. Nulla facilisi. Morbi fringilla vehicula dignissim. In sed dui vitae eros pulvinar consequat. Integer eros quam, finibus quis faucibus dapibus, dictum eget neque.

@@ -1,6 +1,8 @@
 ---
+title: Proin non diam ut erat vehicula dictum. Quisque vel nulla sit amet velit tincidunt
+  mollis
+date: 2019-05-10 00:00:00 Z
 layout: post
-title:  "Proin non diam ut erat vehicula dictum. Quisque vel nulla sit amet velit tincidunt mollis"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices faucibus dignissim. Aliquam posuere eget purus at dignissim. Nunc luctus magna ligula, non convallis nunc tincidunt nec. Nullam semper odio sem, vel aliquam augue tristique eu. Nulla vel finibus mauris, non mattis arcu. Nulla bibendum metus nec arcu facilisis, non scelerisque arcu condimentum. Nunc metus erat, euismod id scelerisque non, consequat eu metus. Quisque sollicitudin ligula nec orci consectetur molestie.
