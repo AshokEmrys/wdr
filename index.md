@@ -85,7 +85,8 @@ sections:
                 title: Praesent malesuada placerat
                 text: Quisque fringilla nisl non lacus elementum, eget bibendum orci ornare. Ut in ligula quis lorem sagittis rhoncus.
                 url: /academics.html 
-                            
+    i7:
+        title: Updates                        
 
 
 

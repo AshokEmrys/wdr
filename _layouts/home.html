@@ -8,12 +8,12 @@ layout: default
     </div>
 </header>
 <main style="overflow: visible">
-    <section class="about-area pb-60 pt-100" style="overflow: hidden">
+    <section id="section1" class="about-area pb-60 pt-100" style="overflow: hidden">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 col-lg-6 mb-40">
                     <div class="section-title">
-                        <h2>{{page.sections.i1.title}}</h2><a href="#section1"></a>
+                        <h2>{{page.sections.i1.title}}</h2>
                     </div>
                     <div class="about-content">
                         <p>
@@ -39,12 +39,12 @@ layout: default
         </div>
     </section>
 
-    <section style="overflow: hidden">
+    <section id="section2"  style="overflow: hidden">
         <div class="jkl-home-parallex d-flex align-items-center">
             <div class="container-fluid">
                 <div class="container ">
                     <div class="jkl-home-about-info-white-text">
-                        <h2>{{page.sections.i2.title}}</h2><a href="#section2"></a>
+                        <h2>{{page.sections.i2.title}}</h2>
                         <p>{{page.sections.i2.text | newline_to_br}}</p>
                         <a href="{{page.sections.i2.url}}" class="btn" data-aos="fade-down" >Read More</a>
 
@@ -55,7 +55,7 @@ layout: default
         </div>
     </section>
 
-    <section class="grey-bg" style="overflow: hidden">
+    <section id="section3" class="grey-bg" style="overflow: hidden">
         <div class="container-fluid">
             <div class="container">
                 <div class="row pt-60">
@@ -73,7 +73,7 @@ layout: default
                     </div>
                     </div>
                 </div>
-                <div class="row pt-60">
+                <div class="row pt-60" id="section4">
                     <div class="col-xl-6 col-lg-6 mb-20 md-margin"  data-aos="fade-right">
                         <div class="jkl-home-card-img">
                             <img src="{{site.baseurl}}/assets/images/home-section4-img.jpg" class="img-fluid" alt="">
@@ -94,7 +94,7 @@ layout: default
         </div>
     </section>
 
-    <section style="overflow: hidden">
+    <section style="overflow: hidden" id="section5">
         <div class="jkl-counter counter-area pb-100 pt-100">
             <div class="container-fluid">
                 <div class="container">
@@ -126,7 +126,7 @@ layout: default
         </div>
     </section>
 
-    <section class="jkl-home-highlt grey-bg pb-70 pt-100" style="overflow: hidden">
+    <section class="jkl-home-highlt grey-bg pb-70 pt-100" style="overflow: hidden" id="section6">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 text-center mb-40">
@@ -233,7 +233,7 @@ layout: default
 
 
 
-    <section style="position:relative;">
+    <section style="position:relative;" id="section7">
         <div class="jkl-home-updates  d-flex align-items-center">
             <div class="jkl-home-updates-bg"></div>
             <div class="container-fluid">
@@ -241,7 +241,7 @@ layout: default
                     <div class="row">
                         <div class="col-xl-12 text-center mb-40">
                             <div class="jkl-home-about-info-white-text">
-                                <h2>Updates</h2>
+                                <h2>{{page.sections.i7.title}}</h2>
                             </div>
                         </div>
                     </div>
