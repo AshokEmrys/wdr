@@ -1,4 +1,4 @@
 ---
 layout: branches
-title: Branches
+page_title: Branches
 ---

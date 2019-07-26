@@ -3,8 +3,19 @@ defaults:
     scope:
       path: ""
     values:
-      layout: "default"
+        layout: "default"
+    scope:
+      path: ""
+      type: "posts"
+    values:
+        page_title: "Updates"
 
-maps:
-  google:
-    api_key: AIzaSyD-J-9ESM35ubrujKVxK6S6MmY6BgzBhUY
+plugins: [jekyll-paginate]
+
+paginate: 10
+paginate_path: "/updates/:num/"
+baseurl: ""
+collections:
+  posts:
+    output: true
+    permalink: /:title.html

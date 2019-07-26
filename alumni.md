@@ -1,4 +1,4 @@
 ---
 layout: alumni
-title: Alumni
+page_title: Alumni
 ---

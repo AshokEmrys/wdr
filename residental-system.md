@@ -1,4 +1,4 @@
 ---
 layout: residental-system
-title: Residental System
+page_title: Residental System
 ---

@@ -1,4 +1,4 @@
 ---
 layout: contact-us
-title: Contact Us
+page_title: Contact Us
 ---
