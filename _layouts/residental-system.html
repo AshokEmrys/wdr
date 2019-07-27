@@ -7,60 +7,34 @@ layout: general_page
     <section class="grey-bg">
         <div class="container-fluid pt-50">
             <div class="container">
-                <div class="row pt-60">
+                <div class="row pt-60" id="section1">
                     <div class="col-xl-6 col-lg-6 mb-20 md-margin">
                         <div class="jkl-home-card-img">
-                            <img src="{{site.baseurl}}/assets/images/home/home-card2.jpg" class="img-fluid" alt="">
+                            <img src="{{site.baseurl}}/assets/images/residental-section1.jpg" class="img-fluid" alt="">
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 mb-40" >
                         <div class="section-title">
-                            <h2>Infra Structure</h2>
+                            <h2>{{page.sections.i1.title}}</h2>
                         </div>
                         <div class="about-content">
-                            <p>Nullam eget purus molestie, tempus massa quis, tempor urna. Nam nec nibh egestas,
-                                rhoncus
-                                erat sed, ullamcorper justo. Etiam in euismod elit. Integer blandit, massa a
-                                volutpat
-                                tempus, metus nisi lobortis nibh, at placerat ipsum nibh sed sem. Cras fermentum
-                                velit
-                                et quam fermentum sollicitudin.
-                                <br> <br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-                                ligula
-                                eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-                                montes,
-                                nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-                                quis,
-                                sem. Nulla consequat massa quis enim.</p>
+                            <p>{{page.sections.i1.text | newline_to_br}}</p>
                         </div>
                     </div>
 
                 </div>
-                <div class="row pt-60">
+                <div class="row pt-60" id="section2">
                     <div class="col-xl-6 col-lg-6 mb-40">
                         <div class="section-title">
-                            <h2>Infra Structure</h2>
+                            <h2>{{page.sections.i2.title}}</h2>
                         </div>
                         <div class="about-content">
-                            <p>Nullam eget purus molestie, tempus massa quis, tempor urna. Nam nec nibh egestas,
-                                rhoncus
-                                erat sed, ullamcorper justo. Etiam in euismod elit. Integer blandit, massa a
-                                volutpat
-                                tempus, metus nisi lobortis nibh, at placerat ipsum nibh sed sem. Cras fermentum
-                                velit
-                                et quam fermentum sollicitudin.
-                                <br> <br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-                                ligula
-                                eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-                                montes,
-                                nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-                                quis,
-                                sem. Nulla consequat massa quis enim.</p>
+                            <p>{{page.sections.i2.text | newline_to_br}}</p>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 mb-20 md-margin ">
                         <div class="jkl-home-card-img">
-                            <img src="{{site.baseurl}}/assets/images/home/home-card1.jpg" class="img-fluid" alt="">
+                            <img src="{{site.baseurl}}/assets/images/residental-section2.jpg" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
@@ -68,14 +42,13 @@ layout: general_page
         </div>
     </section>
 
-    <!-- Gallery -->
-    <section>
-        <div class="jkl-extra-activity-parallex jkl-home-parallex d-flex align-items-center">
+    <section id="section3">
+        <div class="jkl-extra-activity-parallex-infra jkl-extra-activity-parallex jkl-home-parallex d-flex align-items-center">
             <div class="container-fluid">
                 <div class="container ">
                     <div class="jkl-home-about-info-white-text">
-                        <h2>Infra Structure</h2>
-                        <p></p>
+                        <h2>{{page.sections.i3.title}}</h2>
+                        <p>{{page.sections.i3.text | newline_to_br}}</p>
                         <br />
                     </div>
 
@@ -83,12 +56,11 @@ layout: general_page
                         <div class="col-xl-4 col-lg-4 col-md-6 mb-30 grid-item cat-two">
                             <div class="portfolio-wrapper" data-aos="fade-down-right">
                                 <div class="portfolio-thumb">
-                                    <img src="{{site.baseurl}}/assets/images/home/feature/1.jpg" class="img-fluid" alt="">
+                                    <img src="{{site.baseurl}}/assets/images/residental-section3-card1.jpg" class="img-fluid" alt="">
                                 </div>
                                 <div class="portfolio-content">
-                                    <h5>Praesent malesuada placerat </h5>
-                                    <p>Quisque fringilla nisl non lacus elementum, eget bibendum orci ornare. Ut in
-                                        ligula quis lorem sagittis rhoncus.</p>
+                                    <h5>{{page.sections.i3.cards.i1.title}} </h5>
+                                    <p>{{page.sections.i3.cards.i1.text}}</p>
 
                                 </div>
                             </div>
@@ -96,12 +68,11 @@ layout: general_page
                         <div class="col-xl-4 col-lg-4 col-md-6 mb-30 grid-item cat-four cat-one">
                             <div class="portfolio-wrapper" data-aos="zoom-in-up">
                                 <div class="portfolio-thumb">
-                                    <img src="{{site.baseurl}}/assets/images/home/feature/2.jpg" class="img-fluid" alt="">
+                                    <img src="{{site.baseurl}}/assets/images/residental-section3-card2.jpg" class="img-fluid" alt="">
                                 </div>
                                 <div class="portfolio-content">
-                                    <h5>Praesent malesuada placerat </h5>
-                                    <p>Quisque fringilla nisl non lacus elementum, eget bibendum orci ornare. Ut in
-                                        ligula quis lorem sagittis rhoncus.</p>
+                                    <h5>{{page.sections.i3.cards.i2.title}} </h5>
+                                    <p>{{page.sections.i3.cards.i2.text}}</p>
 
                                 </div>
                             </div>
@@ -109,12 +80,11 @@ layout: general_page
                         <div class="col-xl-4 col-lg-4 col-md-6 mb-30 grid-item cat-one cat-five">
                             <div class="portfolio-wrapper" data-aos="fade-down-left">
                                 <div class="portfolio-thumb">
-                                    <img src="{{site.baseurl}}/assets/images/home/feature/3.jpg" class="img-fluid" alt="">
+                                    <img src="{{site.baseurl}}/assets/images/residental-section3-card3.jpg" class="img-fluid" alt="">
                                 </div>
                                 <div class="portfolio-content">
-                                    <h5>Praesent malesuada placerat </h5>
-                                    <p>Quisque fringilla nisl non lacus elementum, eget bibendum orci ornare. Ut in
-                                        ligula quis lorem sagittis rhoncus.</p>
+                                    <h5>{{page.sections.i3.cards.i3.title}} </h5>
+                                    <p>{{page.sections.i3.cards.i3.text}}</p>
 
                                 </div>
                             </div>
@@ -122,12 +92,11 @@ layout: general_page
                         <div class="col-xl-4 col-lg-4 col-md-6 mb-30 grid-item cat-four">
                             <div class="portfolio-wrapper" data-aos="fade-up-right">
                                 <div class="portfolio-thumb">
-                                    <img src="{{site.baseurl}}/assets/images/home/feature/4.jpg" class="img-fluid" alt="">
+                                    <img src="{{site.baseurl}}/assets/images/residental-section3-card4.jpg" class="img-fluid" alt="">
                                 </div>
                                 <div class="portfolio-content">
-                                    <h5>Praesent malesuada placerat </h5>
-                                    <p>Quisque fringilla nisl non lacus elementum, eget bibendum orci ornare. Ut in
-                                        ligula quis lorem sagittis rhoncus.</p>
+                                    <h5>{{page.sections.i3.cards.i4.title}} </h5>
+                                    <p>{{page.sections.i3.cards.i4.text}}</p>
 
                                 </div>
                             </div>
@@ -135,12 +104,11 @@ layout: general_page
                         <div class="col-xl-4 col-lg-4 col-md-6 mb-30 grid-item cat-three cat-one">
                             <div class="portfolio-wrapper" data-aos="zoom-in-up">
                                 <div class="portfolio-thumb">
-                                    <img src="{{site.baseurl}}/assets/images/home/feature/5.jpg" class="img-fluid" alt="">
+                                    <img src="{{site.baseurl}}/assets/images/residental-section3-card5.jpg" class="img-fluid" alt="">
                                 </div>
                                 <div class="portfolio-content">
-                                    <h5>Praesent malesuada placerat </h5>
-                                    <p>Quisque fringilla nisl non lacus elementum, eget bibendum orci ornare. Ut in
-                                        ligula quis lorem sagittis rhoncus.</p>
+                                    <h5>{{page.sections.i3.cards.i5.title}} </h5>
+                                    <p>{{page.sections.i3.cards.i5.text}}</p>
 
                                 </div>
                             </div>
@@ -148,12 +116,11 @@ layout: general_page
                         <div class="col-xl-4 col-lg-4 col-md-6 mb-30 grid-item cat-four cat-five">
                             <div class="portfolio-wrapper" data-aos="fade-up-left">
                                 <div class="portfolio-thumb">
-                                    <img src="{{site.baseurl}}/assets/images/home/feature/6.jpg" class="img-fluid" alt="">
+                                    <img src="{{site.baseurl}}/assets/images/residental-section3-card6.jpg" class="img-fluid" alt="">
                                 </div>
                                 <div class="portfolio-content">
-                                    <h5>Praesent malesuada placerat </h5>
-                                    <p>Quisque fringilla nisl non lacus elementum, eget bibendum orci ornare. Ut in
-                                        ligula quis lorem sagittis rhoncus.</p>
+                                    <h5>{{page.sections.i3.cards.i6.title}} </h5>
+                                    <p>{{page.sections.i3.cards.i6.text}}</p>
 
                                 </div>
                             </div>
@@ -166,34 +133,21 @@ layout: general_page
     </section>
 
 
-    <section class="grey-bg">
+    <section id="section4" class="grey-bg">
         <div class="container-fluid pt-50">
             <div class="container">
                 <div class="row pt-60">
                     <div class="col-xl-6 col-lg-6 mb-20 md-margin" data-aos="fade-right">
                         <div class="jkl-home-card-img">
-                            <img src="{{site.baseurl}}/assets/images/home/home-card2.jpg" class="img-fluid" alt="">
+                            <img src="{{site.baseurl}}/assets/images/residental-section4.jpg" class="img-fluid" alt="">
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 mb-40" data-aos="zoom-in-up">
                         <div class="section-title">
-                            <h2>Infra Structure</h2>
+                            <h2>{{page.sections.i4.title}}</h2>
                         </div>
                         <div class="about-content">
-                            <p>Nullam eget purus molestie, tempus massa quis, tempor urna. Nam nec nibh egestas,
-                                rhoncus
-                                erat sed, ullamcorper justo. Etiam in euismod elit. Integer blandit, massa a
-                                volutpat
-                                tempus, metus nisi lobortis nibh, at placerat ipsum nibh sed sem. Cras fermentum
-                                velit
-                                et quam fermentum sollicitudin.
-                                <br> <br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-                                ligula
-                                eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-                                montes,
-                                nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-                                quis,
-                                sem. Nulla consequat massa quis enim.</p>
+                            <p>{{page.sections.i4.text | newline_to_br}}</p>
                         </div>
                     </div>
                 </div>
@@ -202,40 +156,38 @@ layout: general_page
     </section>
 
     <!-- counter -->
-    <section>
-        <div class="jkl-counter counter-area pb-100 pt-100">
+    <section id="section5" >
+        <div class="jkl-counter-residental jkl-counter counter-area pb-100 pt-100">
             <div class="container-fluid">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-3 col-md-3 col-sm-6 z-index">
                             <div class="single-counter text-center mb-30">
                                 <span class="lnr lnr-move"></span>
-                                <div class="counter">5780</div>
-                                <p>Total Area<br>(Acres)</p>
+                                <div class="counter">{{page.sections.i5.counter.i1.count}}</div>
+                                <p>{{page.sections.i5.counter.i1.title}}</p>
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-3 col-sm-6 z-index">
                             <div class="single-counter text-center mb-30">
                                 <span class="lnr lnr-flag"></span>
-                                <div class="counter">50550</div>
-                                <p>Play Ground<br>
-                                    (Sq.ft)
-                                </p>
+                                <div class="counter">{{page.sections.i5.counter.i2.count}}</div>
+                                <p>{{page.sections.i5.counter.i2.title}}</p>
 
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-3 col-sm-6 z-index">
                             <div class="single-counter text-center mb-30">
                                 <span class="lnr lnr-bus"></span>
-                                <div class="counter">100</div>
-                                <p>Bus</p>
+                                <div class="counter">{{page.sections.i5.counter.i3.count}}</div>
+                                <p>{{page.sections.i5.counter.i3.title}}</p>
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-3 col-sm-6 z-index">
                             <div class="single-counter text-center mb-30">
                                 <span class="lnr lnr-apartment"></span>
-                                <div class="counter">32</div>
-                                <p>Branches</p>
+                                <div class="counter">{{page.sections.i5.counter.i4.count}}</div>
+                                <p>{{page.sections.i5.counter.i4.title}}</p>
                             </div>
                         </div>
                     </div>
@@ -245,34 +197,21 @@ layout: general_page
     </section>
 
 
-    <section class="grey-bg">
+    <section id="section6" class="grey-bg">
         <div class="container-fluid pt-50">
             <div class="container">
                 <div class="row pt-60">
                     <div class="col-xl-6 col-lg-6 mb-40" data-aos="zoom-in-up">
                         <div class="section-title">
-                            <h2>Infra Structure</h2>
+                            <h2>{{page.sections.i6.title}}</h2>
                         </div>
                         <div class="about-content">
-                            <p>Nullam eget purus molestie, tempus massa quis, tempor urna. Nam nec nibh egestas,
-                                rhoncus
-                                erat sed, ullamcorper justo. Etiam in euismod elit. Integer blandit, massa a
-                                volutpat
-                                tempus, metus nisi lobortis nibh, at placerat ipsum nibh sed sem. Cras fermentum
-                                velit
-                                et quam fermentum sollicitudin.
-                                <br> <br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-                                ligula
-                                eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-                                montes,
-                                nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-                                quis,
-                                sem. Nulla consequat massa quis enim.</p>
+                            <p>{{page.sections.i6.text | newline_to_br}}</p>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 mb-20 md-margin " data-aos="fade-left">
                         <div class="jkl-home-card-img">
-                            <img src="{{site.baseurl}}/assets/images/home/home-card1.jpg" class="img-fluid" alt="">
+                            <img src="{{site.baseurl}}/assets/images/residental-section6.jpg" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>

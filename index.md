@@ -1,5 +1,6 @@
 ---
 title: Home
+layout: home
 page_title: Home
 sliders:
     "i1":

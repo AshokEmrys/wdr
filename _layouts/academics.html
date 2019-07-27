@@ -3,64 +3,37 @@ layout: general_page
 ---
 
 <main>
-    <!-- tender smiles/IIT& NEET -->
     <section class="grey-bg">
         <div class="container-fluid pt-50">
             <div class="container">
 
-                <div class="row pt-60">
+                <div class="row pt-60" id="section1">
                     <div class="col-xl-6 col-lg-6 mb-40" >
                         <div class="section-title">
-                            <h2>Tender Smiles</h2>
+                            <h2>{{page.sections.i1.title}}</h2>
                         </div>
                         <div class="about-content">
-                            <p>Nullam eget purus molestie, tempus massa quis, tempor urna. Nam nec nibh egestas,
-                                rhoncus
-                                erat sed, ullamcorper justo. Etiam in euismod elit. Integer blandit, massa a
-                                volutpat
-                                tempus, metus nisi lobortis nibh, at placerat ipsum nibh sed sem. Cras fermentum
-                                velit
-                                et quam fermentum sollicitudin.
-                                <br> <br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-                                ligula
-                                eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-                                montes,
-                                nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-                                quis,
-                                sem. Nulla consequat massa quis enim.</p>
+                            <p>{{page.sections.i1.text | newline_to_br}}</p>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 mb-20 md-margin " >
                         <div class="jkl-home-card-img">
-                            <img src="{{site.baseurl}}/assets/images/home/home-card1.jpg" class="img-fluid" alt="">
+                            <img src="{{site.baseurl}}/assets/images/academics-section1.jpg" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="row pt-60">
+                <div class="row pt-60" id="section2">
                     <div class="col-xl-6 col-lg-6 mb-20 md-margin">
                         <div class="jkl-home-card-img">
-                            <img src="{{site.baseurl}}/assets/images/home/home-card2.jpg" class="img-fluid" alt="">
+                            <img src="{{site.baseurl}}/assets/images/academics-section2.jpg" class="img-fluid" alt="">
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 mb-40" >
                         <div class="section-title">
-                            <h2>IIT & NEET</h2>
+                            <h2>{{page.sections.i2.title}}</h2>
                         </div>
                         <div class="about-content">
-                            <p>Nullam eget purus molestie, tempus massa quis, tempor urna. Nam nec nibh egestas,
-                                rhoncus
-                                erat sed, ullamcorper justo. Etiam in euismod elit. Integer blandit, massa a
-                                volutpat
-                                tempus, metus nisi lobortis nibh, at placerat ipsum nibh sed sem. Cras fermentum
-                                velit
-                                et quam fermentum sollicitudin.
-                                <br> <br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-                                ligula
-                                eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-                                montes,
-                                nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-                                quis,
-                                sem. Nulla consequat massa quis enim.</p>
+                            <p>{{page.sections.i2.text | newline_to_br}}</p>
                         </div>
                     </div>
 
@@ -69,14 +42,14 @@ layout: general_page
         </div>
     </section>
 
-    <!-- Labs -->
-    <section >
-        <div class="container-fluid jkl-scroll-container pt-50 pb-50" data-hijacking="off" data-animation="rotate">
+
+    <section id="section3">
+        <div class="container-fluid jkl-scroll-container jkl-scroll-container-academics pt-50 pb-50" data-hijacking="off" data-animation="rotate">
             <div class="container pt-1" style="background-color: #000000C9;">
                 <div class="row ">
                     <div class="col-xl-12 text-center mt-20 ">
                         <div class="section-title service-title jkl-academics-labs">
-                            <h2>Labs</h2>
+                            <h2>{{page.sections.i3.title}}</h2>
                         </div>
                     </div>
                 </div>
@@ -84,24 +57,15 @@ layout: general_page
                     <div class="row pt-60">
                         <div class="col-xl-6 col-lg-6 mb-20 md-margin" data-aos="fade-right">
                             <div class="jkl-home-card-img">
-                                <img src="{{site.baseurl}}/assets/images/home/home-card2.jpg" class="img-fluid" alt="">
+                                <img src="{{site.baseurl}}/assets/images/academics-section3-card1.jpg" class="img-fluid" alt="">
                             </div>
                         </div>
                         <div class="col-xl-6 col-lg-6 mb-40" data-aos="zoom-in-up">
                             <div class="section-title">
-                                <h2>Science</h2>
+                                <h2>{{page.sections.i3.cards.i1.title}}</h2>
                             </div>
                             <div class="about-content">
-                                <p>Nullam eget purus molestie, tempus massa quis, tempor urna. Nam nec nibh
-                                    egestas, rhoncus erat sed, ullamcorper justo. Etiam in euismod elit.
-                                    Integer blandit, massa a volutpat tempus, metus nisi lobortis nibh, at
-                                    placerat ipsum nibh sed sem. Cras fermentum velit et quam fermentum
-                                    sollicitudin.
-                                    <br> <br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                                    penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-                                    quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-                                    consequat massa quis enim.</p>
+                                {{page.sections.i3.cards.i1.text | newline_to_br}}
                             </div>
                         </div>
 
@@ -109,24 +73,15 @@ layout: general_page
                     <div class="row pt-60">
                         <div class="col-xl-6 col-lg-6 mb-40" data-aos="zoom-in-up">
                             <div class="section-title">
-                                <h2>IT</h2>
+                                <h2>{{page.sections.i3.cards.i2.title}}</h2>
                             </div>
                             <div class="about-content">
-                                <p>Nullam eget purus molestie, tempus massa quis, tempor urna. Nam nec nibh
-                                    egestas, rhoncus erat sed, ullamcorper justo. Etiam in euismod elit.
-                                    Integer blandit, massa a volutpat tempus, metus nisi lobortis nibh, at
-                                    placerat ipsum nibh sed sem. Cras fermentum velit et quam fermentum
-                                    sollicitudin.
-                                    <br> <br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                                    penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-                                    quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-                                    consequat massa quis enim.</p>
+                                <p>{{page.sections.i3.cards.i2.text | newline_to_br}}</p>
                             </div>
                         </div>
                         <div class="col-xl-6 col-lg-6 mb-20 md-margin " data-aos="fade-left">
                             <div class="jkl-home-card-img">
-                                <img src="{{site.baseurl}}/assets/images/home/home-card1.jpg" class="img-fluid" alt="">
+                                <img src="{{site.baseurl}}/assets/images/academics-section3-card2.jpg" class="img-fluid" alt="">
                             </div>
                         </div>
                     </div>
@@ -135,35 +90,22 @@ layout: general_page
         </div>
     </section>
 
-    <!-- teacher training -->
-    <section class="grey-bg">
+
+    <section class="grey-bg" id="section4">
         <div class="container-fluid pt-50">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 mb-20 md-margin" data-aos="fade-right">
                         <div class="jkl-home-card-img">
-                            <img src="{{site.baseurl}}/assets/images/home/home-card2.jpg" class="img-fluid" alt="">
+                            <img src="{{site.baseurl}}/assets/images/academics-section4.jpg" class="img-fluid" alt="">
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 mb-40" data-aos="zoom-in-up">
                         <div class="section-title">
-                            <h2>Teacher Training</h2>
+                            <h2>{{page.sections.i4.title}}</h2>
                         </div>
                         <div class="about-content">
-                            <p>Nullam eget purus molestie, tempus massa quis, tempor urna. Nam nec nibh egestas,
-                                rhoncus
-                                erat sed, ullamcorper justo. Etiam in euismod elit. Integer blandit, massa a
-                                volutpat
-                                tempus, metus nisi lobortis nibh, at placerat ipsum nibh sed sem. Cras fermentum
-                                velit
-                                et quam fermentum sollicitudin.
-                                <br> <br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-                                ligula
-                                eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-                                montes,
-                                nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-                                quis,
-                                sem. Nulla consequat massa quis enim.</p>
+                            <p>{{page.sections.i4.text | newline_to_br}}</p>
                         </div>
                     </div>
 
@@ -174,43 +116,34 @@ layout: general_page
     </section>
 
 
-    <!-- Literature -->
-    <section>
-        <div class="container-fluid jkl-scroll-container pt-50 pb-50" data-hijacking="off" data-animation="rotate">
+
+    <section id="section5">
+        <div class="container-fluid jkl-scroll-container jkl-scroll-container-academics2 pt-50 pb-50" data-hijacking="off" data-animation="rotate">
             <div class="container pt-1" style="background-color: #000000C9;">
                 <div class="row">
                     <div class="col-xl-12 text-center mt-20">
                         <div class="section-title service-title jkl-academics-labs">
-                            <h2>Literature</h2>
+                            <h2>{{page.sections.i5.title}}</h2>
                         </div>
                     </div>
                 </div>
 
-                <!-- spokenenglish/handwriting -->
+
                 <section class=" jkl-home-about-info-white-text">
                     <div class="row pt-60">
 
                         <div class="col-xl-6 col-lg-6 mb-20 md-margin" data-aos="fade-right">
                             <div class="jkl-home-card-img">
-                                <img src="{{site.baseurl}}/assets/images/home/home-card2.jpg" class="img-fluid" alt="">
+                                <img src="{{site.baseurl}}/assets/images/academics-section5-card1.jpg" class="img-fluid" alt="">
                             </div>
                         </div>
 
                         <div class="col-xl-6 col-lg-6 mb-40" data-aos="zoom-in-up">
                             <div class="section-title">
-                                <h2>Spoken English</h2>
+                                <h2>{{page.sections.i5.cards.i1.title}}</h2>
                             </div>
                             <div class="about-content">
-                                <p>Nullam eget purus molestie, tempus massa quis, tempor urna. Nam nec nibh
-                                    egestas, rhoncus erat sed, ullamcorper justo. Etiam in euismod elit.
-                                    Integer blandit, massa a volutpat tempus, metus nisi lobortis nibh, at
-                                    placerat ipsum nibh sed sem. Cras fermentum velit et quam fermentum
-                                    sollicitudin.
-                                    <br> <br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                                    penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-                                    quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-                                    consequat massa quis enim.</p>
+                               <p>{{page.sections.i5.cards.i1.text | newline_to_br}}</p>
                             </div>
                         </div>
                     </div>
@@ -219,24 +152,15 @@ layout: general_page
                     <div class="row pt-60">
                         <div class="col-xl-6 col-lg-6 mb-40" data-aos="zoom-in-up">
                             <div class="section-title">
-                                <h2>HandWriting</h2>
+                                <h2>{{page.sections.i5.cards.i2.title}}</h2>
                             </div>
                             <div class="about-content">
-                                <p>Nullam eget purus molestie, tempus massa quis, tempor urna. Nam nec nibh
-                                    egestas, rhoncus erat sed, ullamcorper justo. Etiam in euismod elit.
-                                    Integer blandit, massa a volutpat tempus, metus nisi lobortis nibh, at
-                                    placerat ipsum nibh sed sem. Cras fermentum velit et quam fermentum
-                                    sollicitudin.
-                                    <br> <br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                                    penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-                                    quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-                                    consequat massa quis enim.</p>
+                                <p>{{page.sections.i5.cards.i2.text | newline_to_br}}</p>
                             </div>
                         </div>
                         <div class="col-xl-6 col-lg-6 mb-20 md-margin " data-aos="fade-left">
                             <div class="jkl-home-card-img">
-                                <img src="{{site.baseurl}}/assets/images/home/home-card1.jpg" class="img-fluid" alt="">
+                                <img src="{{site.baseurl}}/assets/images/academics-section5-card2.jpg" class="img-fluid" alt="">
                             </div>
                         </div>
                     </div>
@@ -249,35 +173,21 @@ layout: general_page
     </section>
 
 
-    <!-- career guidance -->
-    <section>
+    <section id="section6">
         <div class="container-fluid pt-50">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 mb-20 md-margin" data-aos="fade-right">
                         <div class="jkl-home-card-img">
-                            <img src="{{site.baseurl}}/assets/images/home/home-card2.jpg" class="img-fluid" alt="">
+                            <img src="{{site.baseurl}}/assets/images/academics-section6.jpg" class="img-fluid" alt="">
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 mb-40" data-aos="zoom-in-up">
                         <div class="section-title">
-                            <h2>Career guidance</h2>
+                            <h2>{{page.sections.i6.title}}</h2>
                         </div>
                         <div class="about-content">
-                            <p>Nullam eget purus molestie, tempus massa quis, tempor urna. Nam nec nibh egestas,
-                                rhoncus
-                                erat sed, ullamcorper justo. Etiam in euismod elit. Integer blandit, massa a
-                                volutpat
-                                tempus, metus nisi lobortis nibh, at placerat ipsum nibh sed sem. Cras fermentum
-                                velit
-                                et quam fermentum sollicitudin.
-                                <br> <br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-                                ligula
-                                eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-                                montes,
-                                nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-                                quis,
-                                sem. Nulla consequat massa quis enim.</p>
+                            <p>{{page.sections.i6.text | newline_to_br}}</p>
                         </div>
                     </div>
 

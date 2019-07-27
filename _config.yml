@@ -5,6 +5,7 @@ collections:
   posts:
     title: Posts
     output: true
+    permalink: /:title.html
   uploads:
     title: Uploads
     output: true
@@ -19,10 +20,6 @@ plugins:
 paginate: 10
 paginate_path: "/updates/:num/"
 
-collections:
-  posts:
-    output: true
-    permalink: /:title.html
 
-baseurl: "/wdr"
+baseurl: ""
 
