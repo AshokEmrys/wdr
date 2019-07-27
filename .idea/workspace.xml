@@ -4,21 +4,10 @@
     <list default="true" id="d4b7caf6-bc22-4059-98f5-6044d0e4c8ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/about-us.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/academics.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/academics.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/alumni.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/alumni.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/branches.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/branches.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/contact-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/contact-us.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/residental-system.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/residental-system.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/student-life.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/student-life.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about-us.md" beforeDir="false" afterPath="$PROJECT_DIR$/about-us.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/academics.md" beforeDir="false" afterPath="$PROJECT_DIR$/academics.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alumni.md" beforeDir="false" afterPath="$PROJECT_DIR$/alumni.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/branches.md" beforeDir="false" afterPath="$PROJECT_DIR$/branches.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact-us.md" beforeDir="false" afterPath="$PROJECT_DIR$/contact-us.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/residental-system.md" beforeDir="false" afterPath="$PROJECT_DIR$/residental-system.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/updates.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/updates.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -82,8 +71,8 @@
             <entry file="file://$PROJECT_DIR$/branches.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="FIRST">
-                  <first_editor relative-caret-position="260">
-                    <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+                  <first_editor relative-caret-position="460">
+                    <caret line="23" column="87" selection-start-line="23" selection-start-column="87" selection-end-line="23" selection-end-column="87" />
                   </first_editor>
                   <second_editor />
                 </state>
@@ -103,16 +92,68 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/_layouts/branches.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="614">
-                  <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+                  <caret line="53" selection-start-line="53" selection-end-line="53" />
                   <folding>
                     <element signature="n#section#1;n#main#0;n#main#0;n#!!top" />
                     <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#main#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#button#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#main#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#button#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#main#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/_config.yml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="380">
+                  <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="598">
+                  <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/js/main.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="640">
+                  <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/_layouts/post.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="916">
+                  <caret line="46" column="84" selection-start-line="46" selection-start-column="74" selection-end-line="46" selection-end-column="84" />
+                  <folding>
+                    <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#0;n#section#0;n#main#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/_layouts/updates.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="214">
+                  <caret line="16" column="83" selection-start-line="16" selection-start-column="83" selection-end-line="16" selection-end-column="83" />
+                  <folding>
+                    <element signature="n#style#0;n#main#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#div#0;n#section#0;n#main#0;n#!!top" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -138,6 +179,31 @@
               </provider>
             </entry>
           </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/_layouts/home.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="754">
+                  <caret line="252" column="114" selection-start-line="252" selection-start-column="114" selection-end-line="252" selection-end-column="137" />
+                  <folding>
+                    <element signature="n#style#0;n#main#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#section#0;n#main#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#section#1;n#main#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#section#2;n#main#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#section#3;n#main#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#section#4;n#main#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#section#4;n#main#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#section#4;n#main#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#1;n#div#0;n#section#4;n#main#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#3;n#div#1;n#div#0;n#section#4;n#main#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#1;n#div#0;n#section#4;n#main#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#5;n#div#1;n#div#0;n#section#4;n#main#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#section#5;n#main#0;n#!!top" expanded="true" />
+                    <element signature="n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#section#5;n#main#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-second>
     </splitter>
@@ -152,7 +218,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>initialize</find>
       <find>ignore</find>
       <find>hide</find>
       <find>hidd</find>
@@ -182,6 +247,7 @@
       <find>jkl-counter</find>
       <find>jkl-home-parallex</find>
       <find>jkl-home-updates-bg</find>
+      <find>post.url</find>
     </findStrings>
     <replaceStrings>
       <replace>.jkl-footer-</replace>
@@ -212,7 +278,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/css/card_scroll.css" />
         <option value="$PROJECT_DIR$/assets/js/card_scroll.js" />
         <option value="$PROJECT_DIR$/_site/assets/js/main.js" />
         <option value="$PROJECT_DIR$/_site/index.html" />
@@ -223,7 +288,6 @@
         <option value="$PROJECT_DIR$/.gitlab-ci.yml" />
         <option value="$PROJECT_DIR$/../../../../../../../../Data/Downloads/aos-2 2/dist/aos.js" />
         <option value="$PROJECT_DIR$/assets/css/responsive.css" />
-        <option value="$PROJECT_DIR$/assets/js/main.js" />
         <option value="$PROJECT_DIR$/assets/js/markerclusterer.js" />
         <option value="$PROJECT_DIR$/_posts/2019-06-01-Vestibulum imperdiet orci sapien.md" />
         <option value="$PROJECT_DIR$/_posts/2019-06-02- Imperdiet Lorem orci sapien.md" />
@@ -231,7 +295,6 @@
         <option value="$PROJECT_DIR$/_posts/2019-07-11-Maecenas egestas odio tortor, ac dignissim lectus .md" />
         <option value="$PROJECT_DIR$/_includes/header_title.html" />
         <option value="$PROJECT_DIR$/updates.md" />
-        <option value="$PROJECT_DIR$/_layouts/post.html" />
         <option value="$PROJECT_DIR$/_posts/2019-03-11-Egestas odio tortor, ac dignissim lectus .md" />
         <option value="$PROJECT_DIR$/_posts/2019-03-18-turpis massa varius lorem, in sollicitudin dolor.md" />
         <option value="$PROJECT_DIR$/_posts/2019-04-14-Quisque molestie, lorem non rutrum .md" />
@@ -239,15 +302,12 @@
         <option value="$PROJECT_DIR$/_posts/2019-05-12-est vel aliquam eleifend, turpis massa.md" />
         <option value="$PROJECT_DIR$/_posts/2019-05-23-Donec pellentesque non magna condimentum.md" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/_layouts/updates.html" />
         <option value="$PROJECT_DIR$/_layouts/default.html" />
         <option value="$PROJECT_DIR$/_includes/navigation_bar.html" />
         <option value="$PROJECT_DIR$/_includes/footer.html" />
         <option value="$PROJECT_DIR$/_data/branches.yml" />
         <option value="$PROJECT_DIR$/_includes/home_slider.html" />
-        <option value="$PROJECT_DIR$/_layouts/home.html" />
         <option value="$PROJECT_DIR$/student-life.md" />
-        <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/index.md" />
         <option value="$PROJECT_DIR$/_layouts/academics.html" />
         <option value="$PROJECT_DIR$/academics.md" />
@@ -263,6 +323,12 @@
         <option value="$PROJECT_DIR$/contact-us.md" />
         <option value="$PROJECT_DIR$/branches.md" />
         <option value="$PROJECT_DIR$/_layouts/branches.html" />
+        <option value="$PROJECT_DIR$/.gems_dep/ruby/2.6.0/gems/jekyll-3.8.6/lib/theme_template/example/index.html" />
+        <option value="$PROJECT_DIR$/_layouts/home.html" />
+        <option value="$PROJECT_DIR$/assets/js/main.js" />
+        <option value="$PROJECT_DIR$/_layouts/post.html" />
+        <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/_layouts/updates.html" />
       </list>
     </option>
   </component>
@@ -319,6 +385,12 @@
               <item name="krs-website" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="krs-website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="krs-website" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -391,7 +463,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90466000" />
+    <option name="totallyTimeSpent" value="92328000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="3008" height="1669" extended-state="6" />
@@ -435,13 +507,6 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -563,13 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/updates/updates.md" />
     <entry file="file://$PROJECT_DIR$/_includes/header_title.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -644,16 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="80" selection-start-line="13" selection-start-column="80" selection-end-line="13" selection-end-column="80" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#0;n#section#0;n#main#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_site/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -677,42 +725,6 @@
             <element signature="n#section#2;n#main#0;n#!!top" />
             <element signature="n#section#3;n#main#0;n#!!top" />
             <element signature="n#style#0;n#div#0;n#div#0;n#section#3;n#main#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="186" column="51" selection-start-line="186" selection-start-column="51" selection-end-line="186" selection-end-column="51" />
-          <folding>
-            <element signature="n#style#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#1;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#2;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#3;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#4;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#section#4;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#section#4;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#1;n#div#0;n#section#4;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#3;n#div#1;n#div#0;n#section#4;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#1;n#div#0;n#section#4;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#5;n#div#1;n#div#0;n#section#4;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#5;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#section#5;n#main#0;n#!!top" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#5;n#main#0;n#!!top" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#section#5;n#main#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/updates.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
-          <folding>
-            <element signature="n#style#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#div#0;n#section#0;n#main#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -776,13 +788,6 @@
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#!!top" />
             <element signature="n#iframe#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
@@ -881,25 +886,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/branches.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="260">
-            <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/branches.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="614">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
           <folding>
             <element signature="n#section#1;n#main#0;n#main#0;n#!!top" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#main#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#main#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#main#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="252" column="114" selection-start-line="252" selection-start-column="114" selection-end-line="252" selection-end-column="137" />
+          <folding>
+            <element signature="n#style#0;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#0;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#2;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#3;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#4;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#section#4;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#section#4;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#1;n#div#0;n#section#4;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#3;n#div#1;n#div#0;n#section#4;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#1;n#div#0;n#section#4;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#5;n#div#1;n#div#0;n#section#4;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#5;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#section#5;n#main#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/branches.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="460">
+            <caret line="23" column="87" selection-start-line="23" selection-start-column="87" selection-end-line="23" selection-end-column="87" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="916">
+          <caret line="46" column="84" selection-start-line="46" selection-start-column="74" selection-end-line="46" selection-end-column="84" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#0;n#section#0;n#main#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/updates.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="16" column="83" selection-start-line="16" selection-start-column="83" selection-end-line="16" selection-end-column="83" />
+          <folding>
+            <element signature="n#style#0;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#div#0;n#section#0;n#main#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

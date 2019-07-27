@@ -5,7 +5,7 @@ collections:
   posts:
     title: Posts
     output: true
-    permalink: /:title.html
+    permalink: /updates/:title.html
   uploads:
     title: Uploads
     output: true
@@ -21,5 +21,5 @@ paginate: 10
 paginate_path: "/updates/:num/"
 
 
-baseurl: ""
+baseurl: "/wdr"
 

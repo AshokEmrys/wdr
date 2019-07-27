@@ -34,7 +34,7 @@ layout: general_page
                                     <nav class="page-navigation pagination">
                                         <ul>
 
-                                            <li class="page-item"><a class="page-link active" href="{{page.previous.url}}">Prev</a></li>
+                                            <li class="page-item"><a class="page-link active" href="{{page.previous.url | prepend:site.baseurl}}">Prev</a></li>
 
 
                                         </ul>
@@ -47,7 +47,7 @@ layout: general_page
                                 <div class="colcol-xl-6 col-lg-6 col-md-6 text-right">
                                     <nav class="page-navigation pagination">
                                         <ul>
-                                            <li class="page-item"><a class="page-link" href="{{page.next.url}}">Next</a></li>
+                                            <li class="page-item"><a class="page-link" href="{{page.next.url  | prepend:site.baseurl}}">Next</a></li>
                                         </ul>
                                     </nav>
                                 </div>
