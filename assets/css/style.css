@@ -771,6 +771,13 @@ img {
     background-size: cover;
 }
 
+.jkl-extra-activity-parallex-infra {
+    background-image: url("../images/residental-section3-bg.jpg");
+}
+
+.jkl-home-parallex-about-us {
+    background-image: url("../images/about-us-section3-bg.jpg");
+}
 .jkl-yoga-parallex {
     background-image: url("../images/student-life-section4-bg.jpg");
 }
@@ -842,19 +849,6 @@ img {
     margin-bottom: 100px
 }
 
-.jkl-home-updates-bg {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 160%;
-    background-image: url("../images/home/home-update-bg.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index:-1
-}
 
 .jkl-contact-us-bg {
     position: absolute;
@@ -862,7 +856,7 @@ img {
     left: 0px;
     width: 100%;
     height: 120%;
-    background-image: url("../images/home/home-update-bg.jpg");
+    background-image: url("../images/contact-us-section2-bg.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -873,11 +867,15 @@ img {
 .jkl-counter {
     position: relative;
     top: 0px;
-    background-image: url("../images/home/counter-bg.jpg");
+    background-image: url("../images/home_section5-bg.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.jkl-counter-residental {
+    background-image: url("../images/residental-section5-bg.jpg");
 }
 
 .counter-area {
@@ -927,6 +925,13 @@ img {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.jkl-scroll-container-academics {
+    background-image: url("../images/academics-section2-bg.jpg");
+}
+
+.jkl-scroll-container-academics2 {
+    background-image: url("../images/academics-section5-bg.jpg");
 }
 
 .jkl-header-bg h1 {
@@ -1052,7 +1057,7 @@ main {
     left: 0px;
     width: 100%;
     height: 160%;
-    background-image: url("../images/home/home-update-bg.jpg");
+    background-image: url("../images/home-section7-bg.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

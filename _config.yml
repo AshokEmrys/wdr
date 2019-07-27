@@ -5,6 +5,7 @@ collections:
   posts:
     title: Posts
     output: true
+    permalink: /updates/:title.html
   uploads:
     title: Uploads
     output: true

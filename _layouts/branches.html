@@ -5,7 +5,7 @@ layout: general_page
 <main>
 
     <main>
-        <section class="grey-bg">
+        <section id="section1" class="grey-bg">
             <div class="container-fluid pt-50 pb-50">
                 <div class="container">
                     <div class="row pt-60">
@@ -16,23 +16,10 @@ layout: general_page
                         </div>
                         <div class="col-xl-6 col-lg-6 mb-40" >
                             <div class="section-title">
-                                <h2>Branches</h2>
+                                <h2>{{page.sectiona.i1.title}}</h2>
                             </div>
                             <div class="about-content">
-                                <p>Nullam eget purus molestie, tempus massa quis, tempor urna. Nam nec nibh egestas,
-                                    rhoncus
-                                    erat sed, ullamcorper justo. Etiam in euismod elit. Integer blandit, massa a
-                                    volutpat
-                                    tempus, metus nisi lobortis nibh, at placerat ipsum nibh sed sem. Cras fermentum
-                                    velit
-                                    et quam fermentum sollicitudin.
-                                    <br> <br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-                                    ligula
-                                    eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-                                    montes,
-                                    nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-                                    quis,
-                                    sem. Nulla consequat massa quis enim.</p>
+                                <p>{{page.sections.i1.text | newline_to_br}}</p>
                             </div>
                         </div>
 
@@ -42,7 +29,7 @@ layout: general_page
         </section>
 
 
-        <section class="bg-light">
+        <section id="section2" class="bg-light">
             <div class="container-fluid">
                 <div class="container">
                     <div class="row">
@@ -50,9 +37,9 @@ layout: general_page
                             <div class="portfolio-menu  mt-25 mb-25 text-center map-menu" style="display:block;">
                                 <button class="map-menu-item" style="font-size: 18px;text-transform: none;color:#ff5e14" data-filter="">All</button>
                                 <button style="font-size: 18px;text-transform: none" class="p-item map-menu-item"
-                                        data-filter="state1">State 1</button>
+                                        data-filter="state1">{{page.sections.i2.state1}}</button>
                                 <button style="font-size: 18px;text-transform: none" class="p-item map-menu-item"
-                                        data-filter="state2">State 2</button>
+                                        data-filter="state2">{{page.sections.i2.state2}}</button>
                             </div>
                         </div>
                     </div>
@@ -63,6 +50,9 @@ layout: general_page
 
 
         </section>
+
+
+
         <section class="pt-50" style="height:200px">
             <div class="container-fluid">
                 <div class="container text-center">

@@ -3,7 +3,7 @@ layout: general_page
 ---
 
 <main>
-    <section >
+    <section id="section1">
         <div class="container-fluid pt-50">
             <div class="container">
                 <div class="row pt-60">
@@ -14,42 +14,27 @@ layout: general_page
                     </div>
                     <div class="col-xl-6 col-lg-6 mb-40" >
                         <div class="section-title">
-                            <h2>Lorem Ipsum</h2>
+                            <h2>{{page.sections.i1.title}}</h2>
                         </div>
                         <div class="about-content">
-                            <p>Nullam eget purus molestie, tempus massa quis, tempor urna. Nam nec nibh egestas,
-                                rhoncus
-                                erat sed, ullamcorper justo. Etiam in euismod elit. Integer blandit, massa a
-                                volutpat
-                                tempus, metus nisi lobortis nibh, at placerat ipsum nibh sed sem. Cras fermentum
-                                velit
-                                et quam fermentum sollicitudin.
-                                <br> <br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-                                ligula
-                                eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-                                montes,
-                                nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-                                quis,
-                                sem. Nulla consequat massa quis enim.</p>
+                            <p>{{page.sections.i1.text | newline_to_br}}</p>
                         </div>
                     </div>
 
                 </div>
             </div>
         </div>
-    </section>
-
-    <section >
         <div class="container-fluid pt-50">
             <div class="container text-center">
                 <div class="row">
                     <div class="col-xl-12 mb-40">
-                        <a href="#" class="btn">Portal Link</a>
+                        <a href="{{page.sections.i1.url}}" class="btn">Portal Link</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
 
 </main>

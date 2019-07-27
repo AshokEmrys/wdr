@@ -4,56 +4,54 @@ layout: general_page
 
 <main style="overflow: visible">
 
-
-    <!-- branch/contact -->
-    <section class="grey-bg" style="overflow: hidden">
+    <section id="section1" class="grey-bg" style="overflow: hidden">
         <div class="container-fluid pt-50">
             <div class="container">
                 <div class="row text-center">
                     <div class="col-xl-6 col-lg-6">
                         <div class="col mb-5" >
                             <div class="mb-20">
-                                <h3>Contact 1</h3>
+                                <h3>{{page.sections.i1.cards.i1.title}}</h3>
                             </div>
                             <div class="jkl-footer-text">
-                                <p>13/4, Sum dolor sit amet,<br/>Consec tetur, Adipisicing,<br/>Incididuntut - 234556 <br/><span class="fa fa-envelope" aria-hidden="true"> </span> <a href="mailto:leron@example.com"> leron@example.com</a><br/>
-                                    <span class="fa fa-phone fa-rotate-180"> </span><a href="tel:+919876543210"> +91-9876543210</a></p>
+                                <p>{{page.sections.i1.cards.i1.address | newline_to_br}}<br/>
+                                    <span class="fa fa-phone fa-rotate-180"> </span><a href="tel:{{page.sections.i1.cards.i1.phone | remove: '-' | remove: '(' | remove: ')' }}"> {{page.sections.i1.cards.i1.phone}}</a></p>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6">
                         <div class="col mb-5 " >
                             <div class="mb-20">
-
-                                <h3>Contact 2</h3>
+                                <h3>{{page.sections.i1.cards.i2.title}}</h3>
                             </div>
                             <div class="jkl-footer-text">
-                                <p>13/4, Sum dolor sit amet,<br/>Consec tetur, Adipisicing,<br/>Incididuntut - 234556 <br/><span class="fa fa-envelope" aria-hidden="true"> </span> <a href="mailto:leron@example.com"> leron@example.com</a><br/>
-                                    <span class="fa fa-phone fa-rotate-180"> </span><a href="tel:+919876543210"> +91-9876543210</a></p>
+                                <p>{{page.sections.i1.cards.i2.address | newline_to_br}}<br/>
+                                    <span class="fa fa-phone fa-rotate-180"> </span>
+                                    <a href="tel:{{page.sections.i1.cards.i2.phone | remove: '-' | remove: '(' | remove: ')' }}"> {{page.sections.i1.cards.i2.phone}}</a></p>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6">
                         <div class="col mb-5" >
                             <div class="mb-20">
-                                <h3>Contact 3</h3>
+                                <h3>{{page.sections.i1.cards.i3.title}}</h3>
                             </div>
-
                             <div class="jkl-footer-text">
-                                <p>13/4, Sum dolor sit amet,<br/>Consec tetur, Adipisicing,<br/>Incididuntut - 234556 <br/><span class="fa fa-envelope" aria-hidden="true"> </span> <a href="mailto:leron@example.com"> leron@example.com</a><br/>
-                                    <span class="fa fa-phone fa-rotate-180"> </span><a href="tel:+919876543210"> +91-9876543210</a></p>
+                                <p>{{page.sections.i1.cards.i3.address | newline_to_br}}<br/>
+                                    <span class="fa fa-phone fa-rotate-180"> </span>
+                                    <a href="tel:{{page.sections.i1.cards.i3.phone | remove: '-' | remove: '(' | remove: ')' }}"> {{page.sections.i1.cards.i3.phone}}</a></p>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6">
                         <div class="col mb-5" >
                             <div class="mb-20">
-
-                                <h3>Contact 4</h3>
+                                <h3>{{page.sections.i1.cards.i4.title}}</h3>
                             </div>
                             <div class="jkl-footer-text">
-                                <p>13/4, Sum dolor sit amet,<br/>Consec tetur, Adipisicing,<br/>Incididuntut - 234556 <br/><span class="fa fa-envelope" aria-hidden="true"> </span> <a href="mailto:leron@example.com"> leron@example.com</a><br/>
-                                    <span class="fa fa-phone fa-rotate-180"> </span><a href="tel:+919876543210"> +91-9876543210</a></p>
+                                <p>{{page.sections.i1.cards.i4.address | newline_to_br}}<br/>
+                                    <span class="fa fa-phone fa-rotate-180"> </span>
+                                    <a href="tel:{{page.sections.i1.cards.i4.phone | remove: '-' | remove: '(' | remove: ')' }}"> {{page.sections.i1.cards.i4.phone}}</a></p>
                             </div>
                         </div>
                     </div>
@@ -64,7 +62,7 @@ layout: general_page
 
 
     <!-- popup -->
-    <section>
+    <section >
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Feedback
         </button>
@@ -98,14 +96,13 @@ layout: general_page
         </div>
     </section>
 
-    <!-- google form -->
-    <section>
+    <section id="section2">
         <div class="container-fluid" style="position:relative;">
             <div class="jkl-contact-us-bg"></div>
             <div class="container pt-50">
                 <div class="d-flex justify-content-center">
                     <iframe
-                            src="https://docs.google.com/forms/d/e/1FAIpQLSdbrONDclCrMx0jCFl7Q31V3HzyaxpM_FO8RBhN5dZjgk4x8Q/viewform?embedded=true"
+                            src="{{page.sections.i2.url}}"
                             width=100%; height="928" frameborder="0" marginheight="0"
                             marginwidth="0">Loading...</iframe>
                 </div>
@@ -114,7 +111,6 @@ layout: general_page
         </div>
     </section>
 
-    <!-- width="640" height="928" -->
 
 
 </main>
