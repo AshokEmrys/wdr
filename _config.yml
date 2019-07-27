@@ -19,7 +19,4 @@ plugins:
 - jekyll-paginate
 paginate: 10
 paginate_path: "/updates/:num/"
-
-
 baseurl: "/wdr"
-
