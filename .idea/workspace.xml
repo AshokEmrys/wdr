@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4b7caf6-bc22-4059-98f5-6044d0e4c8ab" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/branches.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/branches.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/contact-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/contact-us.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,7 +24,7 @@
             <entry file="file://$PROJECT_DIR$/_config.yml">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="480">
-                  <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+                  <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -130,7 +133,7 @@
             <entry file="file://$PROJECT_DIR$/_layouts/branches.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="900">
-                  <caret line="65" selection-start-line="65" selection-end-line="65" />
+                  <caret line="66" selection-start-line="66" selection-end-line="66" />
                   <folding>
                     <element signature="n#section#1;n#main#0;n#main#0;n#!!top" />
                     <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#main#0;n#!!top" expanded="true" />
@@ -157,33 +160,42 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/_layouts/branches.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="897">
-                  <caret line="61" selection-start-line="61" selection-end-line="61" />
+                <state relative-caret-position="728">
+                  <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#main#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#button#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#main#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#button#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#main#0;n#!!top" expanded="true" />
+                    <element signature="n#section#2;n#main#0;n#main#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/_config.yml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+                  <folding>
+                    <element signature="e#29#159#0" />
+                    <element signature="e#160#241#0" />
+                    <element signature="e#242#268#0" />
+                    <element signature="e#338#641#0" />
+                    <element signature="e#642#1132#0" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/_config.yml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="419">
-                  <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/_layouts/default.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="603">
-                  <caret line="82" column="117" selection-start-line="82" selection-start-column="117" selection-end-line="82" selection-end-column="117" />
+                <state relative-caret-position="249">
+                  <caret line="39" column="78" selection-start-line="39" selection-start-column="78" selection-end-line="39" selection-end-column="78" />
                   <folding>
                     <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#3;n#!!top" expanded="true" />
                     <element signature="e#3430#3547#0" />
                   </folding>
@@ -268,22 +280,19 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/_layouts/contact-us.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="545">
-                  <caret line="99" column="49" selection-start-line="99" selection-start-column="49" selection-end-line="99" selection-end-column="49" />
+                <state relative-caret-position="645">
+                  <caret line="87" selection-start-line="87" selection-end-line="87" />
                   <folding>
                     <element signature="n#style#0;n#main#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#section#0;n#main#0;n#!!top" expanded="true" />
                     <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#!!top" />
                     <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#!!top" />
                     <element signature="n#button#0;n#section#1;n#main#0;n#!!top" />
-                    <element signature="n#div#0;n#section#1;n#main#0;n#!!top" />
-                    <element signature="n#div#0;n#div#0;n#section#1;n#main#0;n#!!top" />
-                    <element signature="n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#!!top" />
                     <element signature="n#button#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#!!top" />
-                    <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#!!top" />
                     <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#!!top" />
                     <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#!!top" />
                     <element signature="n#iframe#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#!!top" />
+                    <element signature="n#style#0;n#div#0;n#section#2;n#main#0;n#!!top" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -331,8 +340,8 @@
       <find>i.(1,9)*:</find>
       <find>i.*:\n</find>
       <find>phone</find>
-      <find>{%</find>
       <find>site.</find>
+      <find>{%</find>
     </findStrings>
     <replaceStrings>
       <replace>.jkl-footer-</replace>
@@ -397,7 +406,6 @@
         <option value="$PROJECT_DIR$/alumni.md" />
         <option value="$PROJECT_DIR$/about-us.md" />
         <option value="$PROJECT_DIR$/_layouts/about-us.html" />
-        <option value="$PROJECT_DIR$/_layouts/contact-us.html" />
         <option value="$PROJECT_DIR$/_layouts/student-life.html" />
         <option value="$PROJECT_DIR$/contact-us.md" />
         <option value="$PROJECT_DIR$/.gems_dep/ruby/2.6.0/gems/jekyll-3.8.6/lib/theme_template/example/index.html" />
@@ -410,11 +418,12 @@
         <option value="$PROJECT_DIR$/index.md" />
         <option value="$PROJECT_DIR$/_includes/navigation_bar.html" />
         <option value="$PROJECT_DIR$/_includes/footer.html" />
-        <option value="$PROJECT_DIR$/_config.yml" />
-        <option value="$PROJECT_DIR$/_layouts/branches.html" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.md" />
         <option value="$PROJECT_DIR$/branches.md" />
+        <option value="$PROJECT_DIR$/_layouts/contact-us.html" />
+        <option value="$PROJECT_DIR$/_layouts/branches.html" />
         <option value="$PROJECT_DIR$/_layouts/default.html" />
+        <option value="$PROJECT_DIR$/_config.yml" />
       </list>
     </option>
   </component>
@@ -543,13 +552,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99650000" />
+    <option name="totallyTimeSpent" value="99917000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="3008" height="1669" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10579176" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10579176" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -561,7 +570,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.5509289" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.30108905" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.30108905" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -990,47 +999,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/branches.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="897">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#main#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/contact-us.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="99" column="49" selection-start-line="99" selection-start-column="49" selection-end-line="99" selection-end-column="49" />
-          <folding>
-            <element signature="n#style#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#!!top" />
-            <element signature="n#button#0;n#section#1;n#main#0;n#!!top" />
-            <element signature="n#div#0;n#section#1;n#main#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#section#1;n#main#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#!!top" />
-            <element signature="n#button#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#!!top" />
-            <element signature="n#iframe#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/updates.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
@@ -1042,14 +1010,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/contact-us.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
+          <folding>
+            <element signature="n#style#0;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#0;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#!!top" />
+            <element signature="n#button#0;n#section#1;n#main#0;n#!!top" />
+            <element signature="n#button#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#!!top" />
+            <element signature="n#iframe#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#section#2;n#main#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/branches.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#section#2;n#main#0;n#main#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/default.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="82" column="117" selection-start-line="82" selection-start-column="117" selection-end-line="82" selection-end-column="117" />
+        <state relative-caret-position="249">
+          <caret line="39" column="78" selection-start-line="39" selection-start-column="78" selection-end-line="39" selection-end-column="78" />
           <folding>
             <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#3;n#!!top" expanded="true" />
             <element signature="e#3430#3547#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+          <folding>
+            <element signature="e#29#159#0" />
+            <element signature="e#160#241#0" />
+            <element signature="e#242#268#0" />
+            <element signature="e#338#641#0" />
+            <element signature="e#642#1132#0" />
           </folding>
         </state>
       </provider>

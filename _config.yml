@@ -1,6 +1,7 @@
 ---
 title: Wdr
 timezone: UTC
+google_maps_api:
 collections:
   posts:
     title: Posts
