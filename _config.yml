@@ -19,3 +19,17 @@ plugins:
 paginate: 10
 paginate_path: "/updates/:num/"
 baseurl: "/wdr"
+footer:
+  facebook:
+    isActive: 1
+    url: facebook.com
+  twitter:
+    isActive: 1
+    twitter.com: 
+  address:
+    text: |-
+      13/4, Sum dolor sit amet,
+      Consec tetur, Adipisicing,
+      Incididuntut - 234556
+    phone: "+91-9876543210"
+    email: sber@example.com
