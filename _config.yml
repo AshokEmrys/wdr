@@ -20,3 +20,18 @@ plugins:
 paginate: 10
 paginate_path: "/updates/:num/"
 baseurl: "/wdr"
+footer:
+  facebook:
+    isActive: true
+    url: facebook.com
+  twitter:
+    isActive: true
+    twitter.com:
+  address:
+    title: Lorem Ipsum
+    text: |-
+      13/4, Sum dolor sit amet,
+      Consec tetur, Adipisicing,
+      Incididuntut - 234556
+    phone: "+91-9876543210"
+    email: sber@example.com
