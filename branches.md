@@ -9,8 +9,8 @@ sections:
             
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
     i2:
-        state1: State1
-        state2: State2
+        state1: State 1 Name
+        state2: State 2 Name
     i5:
             title: Cultural Activities
             text: |-
