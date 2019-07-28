@@ -18,7 +18,7 @@ sections:
   i3:
     title: Cultural Activities
     text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi tempora
-      veritatis nemo aut ea iusto eos 
+      veritatis nemo aut ea iusto eos
 branches:
 - title: Branch Name
   state: state1
