@@ -16,7 +16,7 @@ sections:
     state1: State 1 Name
     state2: State 2 Name
   i3:
-    title: Cultural Activities
+    title: Branches
     text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi tempora
       veritatis nemo aut ea iusto eos
 branches:
