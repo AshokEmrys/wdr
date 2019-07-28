@@ -15,40 +15,10 @@ sections:
   i2:
     state1: State 1 Name
     state2: State 2 Name
-  i5:
+  i3:
     title: Cultural Activities
     text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi tempora
-      veritatis nemo aut ea iusto eos est expedita,quas ab adipisci. Maecenas tempus,
-      tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing
-      sem neque sed ipsum.Quisque blandit blandit purus vel pretium. Aenean at porta
-      justo. Sed vel massa enim. Nunc auctor, quam sed ultrices lacinia, tellus metus
-      sollicitudin dolor, id maximus erat mauris ac sem. Morbi ut lectus augue. Curabitur
-      vitae justo id odio fringilla viverra.
-    cards:
-      i1:
-        title: Praesent malesuada placerat
-        text: Quisque fringilla nisl non lacus elementum, eget bibendum orci ornare.
-          Ut in ligula quis lorem sagittis rhoncus.
-      i2:
-        title: Praesent malesuada placerat
-        text: Quisque fringilla nisl non lacus elementum, eget bibendum orci ornare.
-          Ut in ligula quis lorem sagittis rhoncus.
-      i3:
-        title: Praesent malesuada placerat
-        text: Quisque fringilla nisl non lacus elementum, eget bibendum orci ornare.
-          Ut in ligula quis lorem sagittis rhoncus.
-      i4:
-        title: Praesent malesuada placerat
-        text: Quisque fringilla nisl non lacus elementum, eget bibendum orci ornare.
-          Ut in ligula quis lorem sagittis rhoncus.
-      i5:
-        title: Praesent malesuada placerat
-        text: Quisque fringilla nisl non lacus elementum, eget bibendum orci ornare.
-          Ut in ligula quis lorem sagittis rhoncus.
-      i6:
-        title: Praesent malesuada placerat
-        text: Quisque fringilla nisl non lacus elementum, eget bibendum orci ornare.
-          Ut in ligula quis lorem sagittis rhoncus.
+      veritatis nemo aut ea iusto eos 
 branches:
 - title: Branch Name
   state: state1
