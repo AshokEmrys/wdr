@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,6 +39,7 @@
 <script src="{{site.baseurl}}/assets/js/main.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-J-9ESM35ubrujKVxK6S6MmY6BgzBhUY"></script>
 <script src="{{site.baseurl}}/assets/js/markerclusterer.js"></script>
+{% if page.branches %}
 <script>
     var gmarkers1 = [];
     var markers1 = [];
@@ -46,22 +48,7 @@
         content: ''
     });
 
-    // Our markers
-    markers1 = [
-        ['0', '<div> <h4>Lorem ipsum</h4> <p>13/4, Sum dolor sit amet,<br/>Consec tetur, Adipisicing,<br/>Incididuntut - 234556 <br/><span class="fa fa-envelope" aria-hidden="true"> </span> <a href="mailto:leron@example.com"> leron@example.com</a><br/><span class="fa fa-phone fa-rotate-180"> </span><a href="tel:+919876543210"> +91-9876543210</a></p></div>',
-            20.593683, 78.962883, 'state2'],
-        ['0', '<div> <h4>Lorem ipsum</h4> <p>13/4, Sum dolor sit amet,<br/>Consec tetur, Adipisicing,<br/>Incididuntut - 234556 <br/><span class="fa fa-envelope" aria-hidden="true"> </span> <a href="mailto:leron@example.com"> leron@example.com</a><br/><span class="fa fa-phone fa-rotate-180"> </span><a href="tel:+919876543210"> +91-9876543210</a></p></div>',
-            20.093683, 78.22883, 'state1'],
-        ['0', '<div> <h4>Lorem ipsum</h4> <p>13/4, Sum dolor sit amet,<br/>Consec tetur, Adipisicing,<br/>Incididuntut - 234556 <br/><span class="fa fa-envelope" aria-hidden="true"> </span> <a href="mailto:leron@example.com"> leron@example.com</a><br/><span class="fa fa-phone fa-rotate-180"> </span><a href="tel:+919876543210"> +91-9876543210</a></p></div>',
-            20.893683, 78.12883, 'state2'],
-        ['0', '<div> <h4>Lorem ipsum</h4> <p>13/4, Sum dolor sit amet,<br/>Consec tetur, Adipisicing,<br/>Incididuntut - 234556 <br/><span class="fa fa-envelope" aria-hidden="true"> </span> <a href="mailto:leron@example.com"> leron@example.com</a><br/><span class="fa fa-phone fa-rotate-180"> </span><a href="tel:+919876543210"> +91-9876543210</a></p></div>',
-            20.293683, 78.962883, 'state1'],
-        ['0', '<div> <h4>Lorem ipsum</h4> <p>13/4, Sum dolor sit amet,<br/>Consec tetur, Adipisicing,<br/>Incididuntut - 234556 <br/><span class="fa fa-envelope" aria-hidden="true"> </span> <a href="mailto:leron@example.com"> leron@example.com</a><br/><span class="fa fa-phone fa-rotate-180"> </span><a href="tel:+919876543210"> +91-9876543210</a></p></div>',
-            20.083, 78.902883, 'state2'],
-
-
-
-    ];
+    // Our mark
 
     /**
      * Function to init map
@@ -76,9 +63,12 @@
         };
 
         map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+        markers1 = [{{ page.branches | join: ',' | replace: "=>", ":"}}]
+
         for (i = 0; i < markers1.length; i++) {
             addMarker(markers1[i]);
         }
+
 
     }
 
@@ -87,10 +77,11 @@
      */
 
     function addMarker(marker) {
-        var category = marker[4];
-        var title = marker[1];
-        var pos = new google.maps.LatLng(marker[2], marker[3]);
+        var category = marker.state;
+        var title = marker.title;
+        var pos = new google.maps.LatLng(marker.lat, marker.long);
         var content = marker[1];
+        '<div> <h4>{{marker.title}}</h4> <p>{{marker.text | newline_to_br}} <br/><span class="fa fa-phone fa-rotate-180"> </span><a href="tel:{{marker.phone}} | remove: \'-\' | remove: \'(\' | remove: \')\' "> {{marker.phone}}</a></p></div>'
 
         marker1 = new google.maps.Marker({
             title: title,
@@ -149,5 +140,6 @@
     });
 
 </script>
+{% endif %}
 </body>
 </html>
