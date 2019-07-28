@@ -11,30 +11,11 @@
                 <ul class="navbar-nav mr-auto">
                 </ul>
                 <ul class="navbar-nav text-center">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="{{site.baseurl}}/">Home <span class="sr-only">(current)</span></a>
+                    {% for link in site.header.links %}
+                    <li class="nav-item {% if link[1].url == page.url%} active {%endif%}">
+                        <a class="nav-link" href="{{site.baseurl}}{{link[1].url}}">{{link[1].title}}</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{site.baseurl}}/student-life.html">Student Life</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{site.baseurl}}/academics.html">Academics</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{site.baseurl}}/residental-system.html">Residental System</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{site.baseurl}}/branches.html">Branches</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{site.baseurl}}/alumni.html">Alumni</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{site.baseurl}}/about-us.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{site.baseurl}}/contact-us.html">Contact Us</a>
-                    </li>
+                    {% endfor %}
                 </ul>
 
             </div>

@@ -1,41 +1,19 @@
 <div class="jkl-slider">
+    {% for slider in page.sliders %}
     <div class="jkl-slider-container d-flex align-items-center" >
+
+
         <div class="jkl-slider-content  flex-grow-1 container">
             <div class="row" style="position: relative">
                 <div class="col-xl-12">
                     <div>
-                        <h1 data-animation="fadeInDown" data-delay=".2s" class="" style="animation-delay: 0.2s;">{{page.sliders.i1.title | newline_to_br}}</h1>
-                        <p data-animation="fadeInLeft" data-delay=".4s" class="" style="animation-delay: 0.4s;">{{page.sliders.i1.desc | newline_to_br}}</p>
-                        <a href="{{page.sliders.i1.url}}" class="btn" data-animation="fadeInUp" data-delay=".6s" tabindex="-1" style="animation-delay: 0.6s;">know more</a>
+                        <h1 data-animation="fadeInDown" data-delay=".2s" class="" style="animation-delay: 0.2s;">{{slider[1].title | newline_to_br}}</h1>
+                        <p data-animation="fadeInLeft" data-delay=".4s" class="" style="animation-delay: 0.4s;">{{slider[1].desc | newline_to_br}}</p>
+                        <a href="{{slider[1].url}}" class="btn" data-animation="fadeInUp" data-delay=".6s" tabindex="-1" style="animation-delay: 0.6s;">know more</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="jkl-slider-container d-flex align-items-center" >
-        <div class="jkl-slider-content  flex-grow-1 container">
-            <div class="row" style="position: relative">
-                <div class="col-xl-12">
-                    <div>
-                        <h1 data-animation="fadeInDown" data-delay=".2s" class="" style="animation-delay: 0.2s;">{{page.sliders.i2.title | newline_to_br}}</h1>
-                        <p data-animation="fadeInLeft" data-delay=".4s" class="" style="animation-delay: 0.4s;">{{page.sliders.i2.desc | newline_to_br}}</p>
-                        <a href="{{page.sliders.i2.url}}" class="btn" data-animation="fadeInUp" data-delay=".6s" tabindex="-1" style="animation-delay: 0.6s;">know more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="jkl-slider-container d-flex align-items-center" >
-        <div class="jkl-slider-content  flex-grow-1 container">
-            <div class="row" style="position: relative">
-                <div class="col-xl-12">
-                    <div>
-                        <h1 data-animation="fadeInDown" data-delay=".2s" class="" style="animation-delay: 0.2s;">{{page.sliders.i3.title | newline_to_br}}</h1>
-                        <p data-animation="fadeInLeft" data-delay=".4s" class="" style="animation-delay: 0.4s;">{{page.sliders.i3.desc | newline_to_br}}</p>
-                        <a href="{{page.sliders.i3.url}}" class="btn" data-animation="fadeInUp" data-delay=".6s" tabindex="-1" style="animation-delay: 0.6s;">know more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    {% endfor %}
 </div>

@@ -1,6 +1,7 @@
 ---
 title: Wdr
 timezone: UTC
+google_maps_api:
 collections:
   posts:
     title: Posts
@@ -21,15 +22,42 @@ paginate_path: "/updates/:num/"
 baseurl: "/wdr"
 footer:
   facebook:
-    isActive: 1
+    isActive: true
     url: facebook.com
   twitter:
-    isActive: 1
-    twitter.com: 
+    isActive: true
+    twitter.com:
   address:
+    title: Lorem Ipsum
     text: |-
       13/4, Sum dolor sit amet,
       Consec tetur, Adipisicing,
       Incididuntut - 234556
-    phone: "+91-9876543210"
+    phone: +91-9876543210
     email: sber@example.com
+header:
+  links:
+    i1:
+      title: Home
+      url: /
+    i2:
+      title: Student Life
+      url: /student-life.html
+    i3:
+      title: Academics
+      url: /academics.html
+    i4:
+      title: Residental System
+      url: /residental-system.html
+    i5:
+      title: Branches
+      url: /branches.html
+    i6:
+      title: Alumni
+      url: /alumni.html
+    i7:
+      title: About Us
+      url: /about-us.html
+    i8:
+      title: Contact Us
+      url: /contact-us.html

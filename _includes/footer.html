@@ -9,19 +9,22 @@
             <div class="col-xl-4 col-lg-4 mb-50">
                 <div class="jkl-footer-addr-widget">
                     <div class="jkl-footer-widget-heading">
-                        <h2>Lorem Sum Dolor Si</h2>
+                        <h2>{{site.footer.address.title}}</h2>
                     </div>
 
                     <div class="jkl-footer-text">
-                        <p>13/4, Sum dolor sit amet,<br/>Consec tetur, Adipisicing,<br/>Incididuntut - 234556 </p>
-                        <p><span class="fa fa-envelope" aria-hidden="true"></span> <a href="mailto:leron@example.com">leron@example.com</a><br/>
-                            <span class="fa fa-phone fa-rotate-180"></span><a href="tel:+919876543210">+91-9876543210</a></p>
+                        <p>{{site.footer.address.text | newline_to_br}}</p>
+                        <p><span class="fa fa-envelope" aria-hidden="true"></span> <a href="mailto:{{site.footer.address.email}}">{{site.footer.address.email}}}</a><br/>
+                            <span class="fa fa-phone fa-rotate-180"></span><a href="tel:{{site.footer.address.phone | remove: '-' | remove: '(' | remove: ')'}}">{{site.footer.address.phone}}</a></p>
                     </div>
                     <div class="jkl-footer-social-icon">
                         <span>Follow us</span>
+                        {% if site.footer.facebook.isActive  %}
                         <a href="https://www.facebook.com/"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                        {% endif %}
+                        {% if site.footer.twitter.isActive  %}
                         <a href="https://twitter.com/"><i class="fab fa-twitter twitter-bg"></i></a>
-                        <a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p google-bg"></i></a>
+                        {% endif %}
                     </div>
                 </div>
             </div>
@@ -31,14 +34,9 @@
                         <h3>Useful Links</h3>
                     </div>
                     <ul>
-                        <li><a href="{{site.baseurl}}/">Home</a></li>
-                        <li><a href="{{site.baseurl}}/student-life.html">Student Life</a></li>
-                        <li><a href="{{site.baseurl}}/academics.html">Academics</a></li>
-                        <li><a href="{{site.baseurl}}/residental-system.html">Residental System</a></li>
-                        <li><a href="{{site.baseurl}}/branches.html">Branches</a></li>
-                        <li><a href="{{site.baseurl}}/alumni.html">Alumni</a></li>
-                        <li><a href="{{site.baseurl}}/about-us.html">About Us</a></li>
-                        <li><a href="{{site.baseurl}}/contact-us.html">Contact Us</a></li>
+                        {% for link in site.header.links %}
+                        <li><a href="{{site.baseurl}}{{link[1].url}}">{{link[1].title}}</a></li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>
