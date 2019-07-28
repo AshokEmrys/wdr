@@ -35,3 +35,29 @@ footer:
       Incididuntut - 234556
     phone: "+91-9876543210"
     email: sber@example.com
+header:
+  links:
+    i1:
+      title: Home
+      url: /
+    i2:
+      title: Student Life
+      url: /student-life.html
+    i3:
+      title: Academics
+      url: /academics.html
+    i4:
+      title: Residental System
+      url: /residental-system.html
+    i5:
+      title: Branches
+      url: /branches.html
+    i6:
+      title: Alumni
+      url: /alumni.html
+    i7:
+      title: About Us
+      url: /about-us.html
+    i8:
+      title: Contact Us
+      url: /contact-us.html

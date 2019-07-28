@@ -34,14 +34,9 @@
                         <h3>Useful Links</h3>
                     </div>
                     <ul>
-                        <li><a href="{{site.baseurl}}/">Home</a></li>
-                        <li><a href="{{site.baseurl}}/student-life.html">Student Life</a></li>
-                        <li><a href="{{site.baseurl}}/academics.html">Academics</a></li>
-                        <li><a href="{{site.baseurl}}/residental-system.html">Residental System</a></li>
-                        <li><a href="{{site.baseurl}}/branches.html">Branches</a></li>
-                        <li><a href="{{site.baseurl}}/alumni.html">Alumni</a></li>
-                        <li><a href="{{site.baseurl}}/about-us.html">About Us</a></li>
-                        <li><a href="{{site.baseurl}}/contact-us.html">Contact Us</a></li>
+                        {% for link in site.header.links %}
+                        <li><a href="{{site.baseurl}}{{link[1].url}}">{{link[1].title}}</a></li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>
