@@ -63,10 +63,10 @@
         };
 
         map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-        markers1 = [{{ page.branches | join: ',' | replace: "=>", ":"}}]
+        markers1 = {{ page.branches | newline_to_br | join: ',' | replace: "=>", ":" | replace: "\n", "<br/>"}}
 
         for (i = 0; i < markers1.length; i++) {
-            addMarker(markers1[i]);
+            addMarker(markers1[i], i);
         }
 
 
@@ -76,12 +76,17 @@
      * Function to add marker to map
      */
 
-    function addMarker(marker) {
+    function addMarker(marker, i) {
         var category = marker.state;
         var title = marker.title;
         var pos = new google.maps.LatLng(marker.lat, marker.long);
-        var content = marker[1];
-        '<div> <h4>{{marker.title}}</h4> <p>{{marker.text | newline_to_br}} <br/><span class="fa fa-phone fa-rotate-180"> </span><a href="tel:{{marker.phone}} | remove: \'-\' | remove: \'(\' | remove: \')\' "> {{marker.phone}}</a></p></div>'
+        var content = `<div style='float:left'><img src="{{site.baseurl}}/assets/images/branch1.jpg" style="height:150px;"</div>
+            <div style='float:right; padding: 10px;'>
+            <h3>${marker.title}</h3>
+ <p>${marker.text} <br/>
+ <span class="fa fa-phone fa-rotate-180"> </span><a href="tel:${marker.phone}"> ${marker.phone}</a>
+ </p></div>
+`
 
         marker1 = new google.maps.Marker({
             title: title,
